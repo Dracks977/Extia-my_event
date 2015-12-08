@@ -1,7 +1,5 @@
 <?php
 session_start();
-$errmsg_arr = array();
-$errflag = false;
 // configuration
 include('config.php');
  try {
@@ -14,8 +12,8 @@ catch(PDOException $e)
     echo "24";
     exit();
     }
-$Nom = $_POST['Nom'];   
-$Prenom = $_POST['Prenom']; 
+$Nom = $_POST['nom'];   
+$Prenom = $_POST['prenom']; 
 $user = $_POST['mail'];
 $password = $_POST['pass'];
 $password2 = $_POST['pass2'];
