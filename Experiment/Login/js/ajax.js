@@ -2,7 +2,7 @@ $(document).ready( function () {
     $("#connexionForm").submit( function() {    // à la soumission du formulaire                         
         $.ajax({ // fonction permettant de faire de l'ajax
            type: "POST", // methode de transmission des données au fichier php
-           url: "Vlogin.php", // url du fichier php
+           url: "php/Vlogin.php", // url du fichier php
            data: "mail="+$("#mail").val()+"&pass="+$("#pass").val(), // données à transmettre
            success: function(msg){ // si l'appel a bien fonctionné
                 if(msg == "42") // si la connexion en php a fonctionnée
