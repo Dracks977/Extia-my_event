@@ -4,8 +4,9 @@ $(document).ready( function () {
            type: "POST", 
            url: "php/Vlogin.php", 
            data: "mail="+$("#mail").val()+"&pass="+$("#pass").val(), 
-           success: function(msg){ 
-                if(msg == "42") 
+           success: function(msg){
+           console.log(msg)
+                if(msg == "42")    
                 {
                     $("span#erreur").html("Vous etes connecter.");
      

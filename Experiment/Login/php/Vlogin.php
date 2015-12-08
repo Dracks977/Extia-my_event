@@ -36,9 +36,7 @@ else if($password == '') {
 	$_SESSION['User_ID'] = $rows[0];
 	$_SESSION['User_Nom'] = $rows[1];
 	$_SESSION['User_Prenom'] = $rows[2];
-	$_SESSION['User_Adresse'] = $rows[3];
-	$_SESSION['User_mail'] = $rows[4];
-	$_SESSION['User_role'] = $rows[7];
+	$_SESSION['User_mail'] = $rows[3];
 	echo "42";
 	}
 	else{
