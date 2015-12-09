@@ -26,16 +26,20 @@
     <img alt="inscription" src="img/inscription.png" id="inscription">
 	<h1>Inscription</h1>
 	<i>Veuillez saisir vos informations pour vous inscrire.</i></br></br>
+  <form name="connexionForm" id="connexionForm" action="#">
 	<label for='nom'>Nom * : </label><input id='nom' type='text' name='nom'></input></br>
 	<label for='prenom'>Pr&eacutenom * : </label><input id='prenom' name='prenom' type='text'></input></br>
 	<label for='mail'>Adresse mail * : </label><input id='mail' name='mail' type='text'></input></br>
-	<label for='pass'>Mot de passe * : </label><input id='pass' type='password'></input></br>
-	<label for='pass2'>Confirmation * : </label><input id='pass2' type='password'></input></br>
+	<label for='pass'>Mot de passe * : </label><input id='pass' name='pass' type='password'></input></br>
+	<label for='pass2'>Confirmation * : </label><input id='pass2' name='pass2' type='password'></input></br>
     Acceptez-vous les conditions g&eacuten&eacuterales ? *</br>
 	<input id='oui2' type='checkbox'>Oui</input></br>
 	<input id='non2' type='checkbox'>Non</input></br>
     </br><input type='submit' value='Envoyer'></br>
+    </form>
+
     <i>* Champs obligatoires</i>
+    <span id="erreur"></span>
     </div>
 </body>
 
@@ -53,6 +57,7 @@
     </nav>
   </footer>
   <script type="text/javascript" src="js/logohover.js"></script>
+  <script type="text/javascript" src="js/inscription.js"></script>
   <script type="text/javascript" src="js/footer_fleche.js"></script>
   <script type="text/javascript">
     fleche()
