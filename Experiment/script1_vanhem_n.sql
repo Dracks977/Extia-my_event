@@ -32,6 +32,13 @@ CREATE TABLE Categories
     Libelle VARCHAR(255)
 );
 
+CREATE TABLE Admin
+(
+    ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    pass varchar(1000),
+    user CHAR(32),
+);
+
 CREATE TABLE Region
 (
     ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -44,3 +51,5 @@ CREATE TABLE Categorie_Event
     ID_categorie TINYINT,
     ID_Event INT
 );
+
+INSERT INTO Admin VALUES ("Admin","c1c224b03cd9bc7b6a86d77f5dace40191766c485cd55dc48caf9ac873335d6f");
