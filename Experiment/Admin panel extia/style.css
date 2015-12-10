@@ -1,26 +1,36 @@
 body {
-    background-image: url("back.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("back4.png");
+    background-repeat: repeat;
+    background-size: 100%;
     margin: 0px auto;
 }
 
 select {
-    padding:3px;
-    margin-top: 30px;
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
-    border-radius:4px;
-    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
-    min-width: 320px;
+    padding:7px;
+    font-size:20px; 
+    text-align:center; 
+    border-width:3px; 
+    border-radius:20px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    min-width: 400px;
 	width: auto;
-    height: 30px;
+    height: 40px;
+    color: #F26e27;
+}
+
+h4{
+color:white;
+font-size:20px; 
+}
+
+#w{
+color:white;
 }
 
 
-input[type=submit] {
+#submit {
 	margin:5px;
     padding:5px 15px; 
     background:#ffffff; 
@@ -30,12 +40,26 @@ input[type=submit] {
     border-radius: 5px; 
 }
 
+#consub {
+padding:7px;
+font-size:20px; 
+text-align:center; 
+border-width:3px; 
+border-radius:50px; 
+border-color:#394147; 
+border-style:solid; 
+box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+width: 230px;
+background-color:#ffffff;
+}
+
 #header {
-	background-image: url("1.jpg");
+	display: block;
+	background-image: url("head.png");
 	background-size: cover;
-    padding:1px;
+	padding:1px;
 	height: 70px;
-    font-weight: bold;
+    	font-weight: bold;
 }
 
 #wrap {
@@ -52,6 +76,34 @@ input[type=submit] {
 	height: 760px;
 }
 
+#logo{
+	width:50px;
+	float:left;
+	margin-right: 5%;
+}
+
+#logo1 {
+       width:50px;
+       float:right;
+       margin-left: 2%;
+}
+
+
+#logo2 {
+       width:50px;
+       float:left;
+}
+
+
+#logo3 {
+       width:50px;
+       float:right;
+}
+
+.l {
+   margin-top: 5px;
+}
+
 .bouton {
     width:auto;
     padding:8px 0;
@@ -64,6 +116,91 @@ input[type=submit] {
     width:120px;
     color:#000;
     font-family: Arial,sans-serif;
+}
+
+p {
+    color: #ffffff;
+}
+
+h1{
+    color: #F26e27;
+}
+
+textarea{
+    padding:7px;
+    font-size:20px; 
+    text-align:center; 
+    border-width:3px; 
+    border-radius:20px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    width: 400px;
+    height: 80px;
+    background-color:#ffffff;
+    color: #F26e27;
+}
+
+#Sbouton{
+    padding:7px;
+    font-size:20px; 
+    text-align:center; 
+    border-width:3px; 
+    border-radius:20px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    width: 400px;
+    height: 60px;
+    background-color:#F26e27;
+}
+
+#Ibouton{
+    padding:7px;
+    font-size:20px; 
+    text-align:center; 
+    border-width:3px; 
+    border-radius:20px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    width: 150px;
+    height: 40px;
+    background-color:#F26e27;
+
+}
+
+#Ebouton{
+    padding:7px;
+    font-size:20px; 
+    text-align:center; 
+    border-width:3px; 
+    border-radius:20px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    width: 150px;
+    height: 40px;
+    background-color:red;
+    float:right;
+        margin-right: 15%;
+}
+
+#eventbox{
+    padding:7px;
+    font-size:20px; 
+    text-align:center; 
+    border-width:3px; 
+    border-radius:10px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    width: 400px;
+    height: 25px;
+    background-color:#ffffff;
+    color: #F26e27;
+
+
 }
 
 .bouton.large{font-size: 1.1em; width:220px;}
@@ -93,7 +230,34 @@ input[type=submit] {
     margin-top: 15%;
     width: 400px;
     height: 350px;
-    background-color: red;
-    background: #F5F5F5;
+    background-image: url("head.png");
+    border-radius:10px
 
+}
+
+#conbox { padding:7px; font-size:20px; text-align:center; border-width:3px; border-radius:50px; border-color:#394147; border-style:solid; box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43);  } 
+
+div.upload {
+    width: 400px;
+    border-width:3px; 
+    border-radius:10px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    height: 40px;
+    background: url("bouton.png");
+    overflow: hidden;
+}
+
+div.upload input {
+    display: block !important;
+    border-width:3px; 
+    border-radius:10px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    width: 400px !important;
+    height: 45px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
 }

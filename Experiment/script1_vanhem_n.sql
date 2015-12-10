@@ -20,9 +20,11 @@ CREATE TABLE Event
     image varchar(510),
     Prix FLOAT,
     Place INT,
-    Darte DATE,
+    Region VARCHAR(255),
+    PoF varchar(510),
+    Url VARCHAR(510),
+    Darte DATETIME,
     Date_creation DATE,
-    Region INT,
     Date_modification DATE
 );
 
@@ -36,7 +38,7 @@ CREATE TABLE Admin
 (
     ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     pass varchar(1000),
-    user CHAR(32),
+    user CHAR(32)
 );
 
 CREATE TABLE Region
@@ -52,4 +54,4 @@ CREATE TABLE Categorie_Event
     ID_Event INT
 );
 
-INSERT INTO Admin VALUES ("Admin","c1c224b03cd9bc7b6a86d77f5dace40191766c485cd55dc48caf9ac873335d6f");
+INSERT INTO Admin (user, pass)VALUES ("Admin","06bd29e0206e7d373099fbf86f05efa8620b9eb32f9e7be6eb7ba39ed444e28b");

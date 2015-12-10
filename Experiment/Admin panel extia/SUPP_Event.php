@@ -1,5 +1,5 @@
 <?php
-include('../pages/config.php');
+include('config.php');
 try {
     $conn = new PDO("mysql:host=$dbhost;dbname=$dbname;charset=utf8",$dbuser,$dbpass);
     // set the PDO error mode to exception
@@ -12,10 +12,10 @@ catch(PDOException $e)
     exit();
     }
 	
-	$mail = $_POST['user'];
+	$N_event = $_POST['N_event'];
 	
-	$result = $conn->prepare("DELETE U.* FROM User U WHERE U.mail = :user");
-	$result->bindParam(':user', $mail);
+	$result = $conn->prepare("DELETE E.* FROM Event E WHERE E.Libelle= :user");
+	$result->bindParam(':user', $N_event);
 	$result->execute();
-	header("location: index.php?id=66");
+	header("location: wait.php");
 ?>
