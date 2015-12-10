@@ -31,7 +31,7 @@
 	        <label for='pass'>Mot de passe * : </label><input id='pass' name='pass' type='password'></input></br>
 		    </br><input type="submit" value="Je me connecte" class="bouton" /></br>
 </form>
-    <i>* Champs obligatoires</i><br>
+    <i>* Champs obligatoires</i><br><br><br>
     <span id="erreur"></span><br>
 	</div>
 </body>

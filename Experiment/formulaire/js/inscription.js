@@ -8,7 +8,7 @@ $(document).ready( function () {
             console.log(msg);
                 if(msg == "42") 
                 {
-                    $("span#erreur").html("Vous etes Inscrit.");
+                    alert("Vous etes inscrit.")
      
                 }
                 else if (msg == "24")  
