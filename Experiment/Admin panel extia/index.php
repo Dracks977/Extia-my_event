@@ -13,6 +13,7 @@
 </head>
 
 <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <?php 
 
 session_start(); if(isset($_SESSION['Admin']) AND $_SESSION['Admin'] == true):  ?>
@@ -31,6 +32,43 @@ session_start(); if(isset($_SESSION['Admin']) AND $_SESSION['Admin'] == true):  
 <?php if (isset($_GET['id']) AND  $_GET['id'] == 66): ?>
 <center><br><br><h2>Modification enregistré</h2></center>
 <?php endif; ?>
+
+<?php if(!isset($_GET['id']) OR $_GET['id'] == 1): ?>
+
+<section id='moite' > 
+ <center><h1>Info Utilisateur</h1>
+ <select id="N_User" name="N_User">
+  <?php include("User_Lister.php"); ?>
+ </select>
+ <bouton id="Ibouton" type="submit" style="color:white">Information</bouton></center>
+ <br><center><div id="info"></div></center>
+ <script type="text/javascript">
+  function pastordu(){
+  $("#Ibouton").click( function () {
+    $("#info").css({display : 'inline'})
+    var liste, texte;
+    liste = document.getElementById("N_User");
+    texte = liste.options[liste.selectedIndex].text;                      
+      $.ajax({ 
+         type: "POST", 
+         url: "INF_USer.php", 
+         data: "l=" + texte, 
+         success: function(msg){
+              $('#info').html(msg);
+
+                          
+         }
+      })
+     return false; 
+
+});
+}
+pastordu();
+ </script>
+</section>
+
+<?php endif; ?>
+
 <?php if(isset($_GET['id']) AND $_GET['id'] == 2): ?>
  <section id='moite' > 
  <center><h1>Ajout Event</h1>
@@ -45,33 +83,39 @@ if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count
 }
 ?>
  <form id="add" method="POST" action="ADD_Event.php" enctype="multipart/form-data">
- <p>Libelle</p>
- <input id="eventbox" name="lib" type="text"><br>
- <p>Description</p>
- <textarea name="comment" form="add">Enter text here...</textarea><br>
- <p>Fun ou Pro</p>
+ <p id="fuck">Libell&eacute; :</p>
+ <input id="eventbox" name="lib" type="text" require><br>
+ <p id="fuck">Description :</p>
+ <textarea name="comment" form="add">Entrez un descriptif ici...</textarea><br>
+ <p id="fuck">Cat&eacute;gorie professionnel ou festif : </p>
  <select name="FP">
- 	<option>Fun</option>
- 	<option>Pro</option>
- 	<option>Pro_Visio</option>
+ 	<option>Festif</option>
+ 	<option>Professionnel</option>
  </select><br>
-  <p>Region</p>
+ <p id="fuck">Visio ? </p>
+  <select name="Visio">
+  <option>Non</option>
+  <option>Oui</option>
+ </select><br>
+  <p id="fuck">Ville : </p>
  <select name="region">
- 	<option>Liste de touts les region a venir</option>
+ 	<option>Liste de toutes les villes</option>
  	<option>apres ajout de region onglet #</option>
  </select><br>
- <p>url</p>
+ <p id="fuck">URL :</p>
  <input id="eventbox" type="url" name="url"><br>
- <p>image</p>
+ <p id="fuck">Email Contact :</p>
+ <input id="eventbox" type="mail" name="mail" require><br>
+ <p id="fuck">Image :</p>
    <div class="upload">
         <input type="hidden" name="MAX_FILE_SIZE" value="1099999">
         <input type="file" name="upload"/>
    </div>
- <p>Prix</p>
+ <p id="fuck">Prix : </p>
  <input id="eventbox" type="number" name="prix"><br>
- <p>Place</p>
+ <p id="fuck">Place : </p>
  <input id="eventbox" type="number" name="place"><br>
- <p>Date et heure</p>
+ <p id="fuck">Date et heure : </p>
  <input id="eventbox" type="datetime-local" name="drate"><br><br>
  <input id="Sbouton" type="submit" value="Ajouter" style="color:white"><br><br></center>
  
@@ -81,6 +125,20 @@ if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count
 
 
 </section>
+<?php if(!isset($_GET['id']) OR $_GET['id'] == 1): ?>
+	 <section id='moite' > 
+ <center><h1>Supression User</h1></center>
+ <center><form action="SUPP_User.php" method="POST">
+ <select id="userp" name="user">
+  <?php include("User_Lister.php"); ?>
+ </select>
+ <input id="Eb" type="submit" value="Supprimer" style="color:white">
+ </form>
+ <p style="padding:0; color:red;">Attention, Toutes suppresion est definitive.</p>
+ </center>
+
+ </section>
+ <?php endif; ?>
 
 
 <?php if(isset($_GET['id']) AND $_GET['id'] == 2): ?>
@@ -94,7 +152,8 @@ if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count
  <input id="Ebouton" type="submit" value="Supprimer" style="color:white">
  <bouton id="Ibouton" type="submit" style="color:white">Information</bouton>
  </form> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <p style="padding:0; color:red;">Attention, Toutes suppresion est definitive.</p>
+
 
   <br><center><div id="info"></div></center>
  <script type="text/javascript">
@@ -114,12 +173,8 @@ if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count
                           
          }
       })
-      // return false; 
-   $("#Ibouton").click(function (){
-    console.log("ca marche")
-   $("#info").css({display : 'none'})
-    pastord();
-   });
+     return false; 
+
 });
 }
 pastord();

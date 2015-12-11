@@ -1,5 +1,5 @@
 body {
-    background-image: url("back4.png");
+    background-image: url("back5.png");
     background-repeat: repeat;
     background-size: 100%;
     margin: 0px auto;
@@ -18,16 +18,18 @@ select {
 	width: auto;
     height: 40px;
     color: #F26e27;
+    background-color:#ffffff;
 }
 
 h4{
-color:white;
+color:#F26e27;
 font-size:20px; 
 }
 
-#w{
-color:white;
+#fuck{
+color:black;
 }
+
 
 
 #submit {
@@ -151,7 +153,7 @@ textarea{
     border-style:solid; 
     box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
     width: 400px;
-    height: 60px;
+    height: 40px;
     background-color:#F26e27;
 }
 
@@ -169,6 +171,22 @@ textarea{
     background-color:#F26e27;
 
 }
+
+#Eb{
+    padding:7px;
+    font-size:20px; 
+    text-align:center; 
+    border-width:3px; 
+    border-radius:20px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    width: 150px;
+    height: 40px;
+    background-color:red;
+
+}
+
 
 #Ebouton{
     padding:7px;

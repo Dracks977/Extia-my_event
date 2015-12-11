@@ -58,6 +58,8 @@ $Url = $_POST['url'];
 $Prix = $_POST['prix'];
 $Places = $_POST['place'];
 $Date = $_POST['drate'];
+$Visio = $_POST['Visio'];
+$mail = $_POST['mail'];
 //$fichier
 
 if (!isset($Descrip) AND $Descrip == ""){
@@ -85,7 +87,7 @@ catch(PDOException $e)
     }
 
 // $result = $conn->prepare("INSERT INTO Event (Libelle, Description, image, Prix, Place, Region, PoF, Url, Darte, Date_modification,Date_creation) VALUES ('Test', 'test', 'test', '5', '50', 'test', '1', '', '', NOW(), NOW() )");
-	$result = $conn->prepare("INSERT INTO Event (Libelle, Description, image, Prix, Place, Region, PoF, Url, Darte, Date_modification,Date_creation) VALUES (:Libelle, :Descrip, :Image, :Prix, :Places, :Region, :FoP, :Url, :Darte, NOW(), NOW())");
+	$result = $conn->prepare("INSERT INTO Event (Libelle, Description, image, Prix, Place, Region, Visio, Mail, PoF, Url, Darte, Date_modification,Date_creation) VALUES (:Libelle, :Descrip, :Image, :Prix, :Places, :Region, :Visio, :mail, :FoP, :Url, :Darte, NOW(), NOW())");
 	$result->bindParam(':Libelle', $Libelle);
 	$result->bindParam(':Descrip', $Descrip);
 	$result->bindParam(':FoP', $FoP);
@@ -95,6 +97,9 @@ catch(PDOException $e)
 	$result->bindParam(':Places', $Places);
 	$result->bindParam(':Darte', $Date);
 	$result->bindParam(':Image', $fichier);
+	$result->bindParam(':Visio', $Visio);
+	$result->bindParam(':mail', $mail);
+
 	$result->execute();
 	unset($_SESSION['ERRMSG_ARR']);
 	header("location: wait.php");

@@ -21,6 +21,8 @@ CREATE TABLE Event
     Prix FLOAT,
     Place INT,
     Region VARCHAR(255),
+    Mail VARCHAR(255),
+    Visio char(3),
     PoF varchar(510),
     Url VARCHAR(510),
     Darte DATETIME,
