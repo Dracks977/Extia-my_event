@@ -10,13 +10,13 @@ select {
     font-size:20px; 
     text-align:center; 
     border-width:3px; 
-    border-radius:20px; 
+    border-radius:30px; 
     border-color:#394147; 
     border-style:solid; 
     box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
     min-width: 400px;
-	width: auto;
-    height: 40px;
+    width: 400px;
+    height: 45px;
     color: #F26e27;
     background-color:#ffffff;
 }
@@ -166,7 +166,7 @@ textarea{
     border-color:#394147; 
     border-style:solid; 
     box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
-    width: 150px;
+      width: 400px;
     height: 40px;
     background-color:#F26e27;
 
@@ -181,7 +181,7 @@ textarea{
     border-color:#394147; 
     border-style:solid; 
     box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
-    width: 150px;
+   width: 400px;
     height: 40px;
     background-color:red;
 

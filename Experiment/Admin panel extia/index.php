@@ -39,8 +39,8 @@ session_start(); if(isset($_SESSION['Admin']) AND $_SESSION['Admin'] == true):  
  <center><h1>Info Utilisateur</h1>
  <select id="N_User" name="N_User">
   <?php include("User_Lister.php"); ?>
- </select>
- <bouton id="Ibouton" type="submit" style="color:white">Information</bouton></center>
+ </select><br><br>
+ <input id="Ibouton" type="submit" value="Informations" style="color:white"></center>
  <br><center><div id="info"></div></center>
  <script type="text/javascript">
   function pastordu(){
@@ -68,6 +68,19 @@ pastordu();
 </section>
 
 <?php endif; ?>
+
+ <?php if(!isset($_GET['id']) OR $_GET['id'] == 3): ?>
+   <section id='moite' > 
+ <center><h1>Ajout Villes</h1></center>
+ <center><form action="ADD_Tag.php" method="POST">
+<p id="fuck">Libell&eacute; :</p>
+ <input id="eventbox" name="lib" type="text" require><br>
+<br><input id="Sbouton" type="submit" value="Ajouter" style="color:white">
+ </form>
+ </center>
+
+ </section>
+ <?php endif; ?>
 
 <?php if(isset($_GET['id']) AND $_GET['id'] == 2): ?>
  <section id='moite' > 
@@ -131,7 +144,7 @@ if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count
  <center><form action="SUPP_User.php" method="POST">
  <select id="userp" name="user">
   <?php include("User_Lister.php"); ?>
- </select>
+ </select><br><br>
  <input id="Eb" type="submit" value="Supprimer" style="color:white">
  </form>
  <p style="padding:0; color:red;">Attention, Toutes suppresion est definitive.</p>
@@ -141,18 +154,21 @@ if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count
  <?php endif; ?>
 
 
+
+
+
 <?php if(isset($_GET['id']) AND $_GET['id'] == 2): ?>
 
  <section id='moite' > 
- <center><h1>Supression Event</h1></center><br>
+ <center><h1>Supression Event</h1></center><br><br>
  <center><form action="SUPP_Event.php" method="POST">
  <select id="N_event" name="N_event">
   <?php include("Event_Lister.php"); ?>
- </select>
- <input id="Ebouton" type="submit" value="Supprimer" style="color:white">
- <bouton id="Ibouton" type="submit" style="color:white">Information</bouton>
+ </select><br><br>
+ <input id="Eb" type="submit" value="Supprimer" style="color:white"><br><br>
+  <input id="Ibouton" type="submit" value="Informations" style="color:white"></center>
  </form> 
-  <p style="padding:0; color:red;">Attention, Toutes suppresion est definitive.</p>
+  <center><p style="padding:0; color:red;">Attention, Toutes suppresion est definitive.</p></center>
 
 
   <br><center><div id="info"></div></center>
@@ -182,6 +198,20 @@ pastord();
  
 <?php endif; ?>
 
+ <?php if(!isset($_GET['id']) OR $_GET['id'] == 3): ?>
+   <section id='moite' > 
+ <center><h1>Supression Villes</h1></center><br><br>
+ <center><form action="SUPP_Tag.php" method="POST">
+ <select id="tagsel" name="Tag">
+  <?php include("Tag_Lister.php"); ?>
+ </select><br><br>
+<input id="Eb" type="submit" value="Supprimer" style="color:white">
+ </form>
+ <p style="padding:0; color:red;">Attention, Toutes suppresion est definitive.</p>
+ </center>
+
+ </section>
+ <?php endif; ?>
 
 </section>
 
