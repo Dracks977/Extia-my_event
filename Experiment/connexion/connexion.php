@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,target-densitydpi=device-dpi"/>
 <header>
-<title>Extia Events</title>
+<title>Se connecter</title>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <div id="logo"
@@ -13,10 +13,10 @@
 </div>
 <nav id="menu_header">
   <ul id="head">
-    <li class="h"><a href="#"><img alt="Extia1" src="img/accueil.png" id="acc" style="width:50px"></a></li>
-    <li class="h"><a href="#"><img alt="Extia1" src="img/pro.png" id="pro" style="width:50px"></a></li>
-    <li class="h"><a href="#"><img alt="Extia1" src="img/fun.png" id="fun" style="width:50px"></a></li>
-    <li class="h"><a href="#"><img alt="Extia1" src="img/contact.png" id="cont" style="width:50px"></a></li>
+    <li class="h"><a href="#" class="info"><img alt="Extia1" src="img/accueil.png" id="acc" style="width:50px"><span class="lol">Accueil</span></a></li>
+    <li class="h"><a href="#" class="info"><img alt="Extia1" src="img/pro.png" id="pro" style="width:50px"><span class="mdr">Professionnel</span></a></li>
+    <li class="h"><a href="#" class="info"><img alt="Extia1" src="img/fun.png" id="fun" style="width:50px"><span class="je">Festif</span></a></li>
+    <li class="h"><a href="#" class="info"><img alt="Extia1" src="img/contact.png" id="cont" style="width:50px"><span class="sais">Contact</span></a></li>
   </ul>
 </nav>
 </header>
@@ -31,8 +31,10 @@
 	        <label for='pass'>Mot de passe * : </label><input id='pass' name='pass' type='password'></input></br>
 		    </br><input type="submit" value="Je me connecte" class="bouton" /></br>
 </form>
-    <i>* Champs obligatoires</i><br><br><br>
-    <span id="erreur"></span><br>
+    <h5><i>* Champs obligatoires</i></h5><br><br><br>
+    <span id="erreur"></span>
+    <a href="/admin">Panel admin</a></br>
+    <a href="php/mdp_oublie.php">Mot de passe oubli&eacute; ?</a>
 	</div>
 </body>
 <footer>
@@ -45,6 +47,7 @@
       <a href="https://www.youtube.com/?hl=fr&gl=FR"><img id="youtube" class="img1" src="img/youtube.png" alt="youtube"/></a>
           <img id="greatplace" class="img" src="img/Gp.png" alt="logoGreatPlace"/>
         </ul>
+
       </div>
     </nav>
   </footer>

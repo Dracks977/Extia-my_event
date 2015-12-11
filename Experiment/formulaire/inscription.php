@@ -32,10 +32,7 @@
 	<label for='mail'>Adresse mail * : </label><input id='mail' name='mail' type='text'></input></br>
 	<label for='pass'>Mot de passe * : </label><input id='pass' name='pass' type='password'></input></br>
 	<label for='pass2'>Confirmation * : </label><input id='pass2' name='pass2' type='password'></input></br>
-    Acceptez-vous les conditions g&eacuten&eacuterales ? *</br>
-	<input id='oui2' type='checkbox'>Oui</input></br>
-	<input id='non2' type='checkbox'>Non</input></br>
-    </br><input type='submit' value='Envoyer'></br>
+    </br><input type='submit' value='Envoyer' id="bouton11"></br><br>
     </form>
 
     <i>* Champs obligatoires</i>

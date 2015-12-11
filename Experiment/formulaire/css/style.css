@@ -68,19 +68,19 @@ width:100%;
 background:#F26e27;
 
 }
- 
+
 #head {
 padding:5px;
 border-radius:4px;
- 
+
 }
- 
+
 .h {
 display:inline;
 padding:0 14px 0 0;
 margin:0 14px 0 0;
 }
- 
+
 .h:last-child {
 background:none;
 padding:0;
@@ -91,7 +91,7 @@ margin:0;
 color:white;
 text-decoration:none;
 }
- 
+
 .menu:hover{
 color:#394147;
 }
@@ -206,4 +206,20 @@ margin-right:40px;
 
 #fun{
 margin-right:40px;
+}
+
+#bouton11{
+background-color: #F26e27;
+border-color: #F26e27;
+border-width: 1px;
+border-radius: 10px;
+color:white;
+width: 80px;
+height: 30px;
+font-size: 13px;
+}
+
+#connexionForm input{
+border-radius: 3px;
+border-color: #28282e;
 }
