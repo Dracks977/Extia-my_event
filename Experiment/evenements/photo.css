@@ -1,0 +1,95 @@
+body {
+     background-color: white;
+}
+
+.firstl {
+	margin-top:0.215px;
+    	padding-top:0.215px;
+}
+
+header {
+      margin-top:1.9%;
+      padding-top:5px;
+}
+
+.firstl {
+      margin-top:3%;
+      padding-top:5px;
+}
+
+#i1,#i2,#i3,#i4,#i5 {
+    display:inline;
+    margin-top:0%;
+    margin-left:0%;
+    margin-right:0%;
+    width:377.2px;
+    height:231px;
+}
+
+#i6,#i7,#i8,#i9,#i10 {
+    display:inline;
+    margin-top:0%;
+    margin-left:0%;
+    margin-right:0%;
+    width:377.2px;
+    height:231px;
+}
+
+#i11,#i12,#i13,#i14,#i15 {
+    display:inline;
+    margin-top:0%;
+    margin-left:0%;
+    margin-right:0%;
+    width:377.2px;
+    height:231px;
+}
+
+.troil {
+       margin-bottom:7.8%;
+}
+
+@-webkit-keyframes pulse {
+ 0% {
+   opacity: 1.0;
+   -webkit-transform: scale(2.0) rotate(0deg);
+ }
+ 100% {
+   opacity: 2.0;
+   -webkit-transform: scale(1.0) rotate(0deg);
+ }
+}
+
+#i2 {
+ -webkit-animation-name: pulse;
+ -webkit-animation-duration: 5s;
+ -webkit-animation-direction: alternate;
+ -webkit-animation-timing-function: ease-in-out;
+}
+
+#i4 {
+ -webkit-animation-name: pulse;
+ -webkit-animation-duration: 5s;
+ -webkit-animation-direction: alternate;
+ -webkit-animation-timing-function: ease-in-out;
+}
+
+#i8 {
+ -webkit-animation-name: pulse;
+ -webkit-animation-duration: 6s;
+ -webkit-animation-direction: alternate;
+ -webkit-animation-timing-function: ease-in-out;
+}
+
+#i12 {
+ -webkit-animation-name: pulse;
+ -webkit-animation-duration: 5s;
+ -webkit-animation-direction: alternate;
+ -webkit-animation-timing-function: ease-in-out;
+}
+
+#i14 {
+ -webkit-animation-name: pulse;
+ -webkit-animation-duration: 5s;
+ -webkit-animation-direction: alternate;
+ -webkit-animation-timing-function: ease-in-out;
+}
