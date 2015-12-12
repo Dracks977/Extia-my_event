@@ -59,13 +59,13 @@ CREATE TABLE CLE
 CREATE TABLE Feedback
 (
     ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-	Libelle_event VARCHAR(255),
-	Nom CHAR(32),
-    Prenom CHAR(32),
+	ID_event INT,
+	ID_user INT, 
 	Note INT,
-    Description VARCHAR(510),
+    Commentaire VARCHAR(510),
     Date_creation DATE
 );
+
 CREATE TABLE Event_User
 (
     ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
