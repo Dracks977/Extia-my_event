@@ -11,7 +11,7 @@ include('config.php');
     }
 catch(PDOException $e)
     {
-    echo "24";
+    echo "Connextion a la base de donné imposible, check config.php";
     exit();
     }
 $user = $_POST['user'];

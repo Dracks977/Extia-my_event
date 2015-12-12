@@ -25,7 +25,7 @@ session_start(); if(isset($_SESSION['Admin']) AND $_SESSION['Admin'] == true):  
 <a href="index.php?id=3"><image class="l" id="logo" src="Categ.png"></image></a>
 <a href="index.php?id=4"><image class="l" id="logo2" src="Stats.png" style="margin-right: 0%;"></image></a>
 <a href="other"><image class="l" id="logo1" src="Site.png" style="margin-right: 0;"></image></a>
-<a href="other"><image class="l" id="logo3" src="deco.png" style="margin-right: 0;"></image></a>
+<a href="dest.php"><image class="l" id="logo3" src="deco.png" style="margin-right: 0;"></image></a>
 </div>
 
 <div id='wrap'>
@@ -69,12 +69,12 @@ pastordu();
 
 <?php endif; ?>
 
- <?php if(!isset($_GET['id']) OR $_GET['id'] == 3): ?>
+ <?php if(isset($_GET['id']) AND $_GET['id'] == 3): ?>
    <section id='moite' > 
  <center><h1>Ajout Villes</h1></center>
  <center><form action="ADD_Tag.php" method="POST">
 <p id="fuck">Libell&eacute; :</p>
- <input id="eventbox" name="lib" type="text" require><br>
+ <input id="eventbox" name="ville" type="text" require><br>
 <br><input id="Sbouton" type="submit" value="Ajouter" style="color:white">
  </form>
  </center>
@@ -112,8 +112,7 @@ if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count
  </select><br>
   <p id="fuck">Ville : </p>
  <select name="region">
- 	<option>Liste de toutes les villes</option>
- 	<option>apres ajout de region onglet #</option>
+  <?php include("Tag_Lister.php"); ?>
  </select><br>
  <p id="fuck">URL :</p>
  <input id="eventbox" type="url" name="url"><br>
@@ -198,7 +197,7 @@ pastord();
  
 <?php endif; ?>
 
- <?php if(!isset($_GET['id']) OR $_GET['id'] == 3): ?>
+ <?php if(isset($_GET['id']) AND $_GET['id'] == 3): ?>
    <section id='moite' > 
  <center><h1>Supression Villes</h1></center><br><br>
  <center><form action="SUPP_Tag.php" method="POST">

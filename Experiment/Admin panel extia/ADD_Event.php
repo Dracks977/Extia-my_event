@@ -14,13 +14,15 @@ $extension = strrchr($_FILES['upload']['name'], '.');
 //Début des vérifications de sécurité...
 if(!in_array($extension, $extensions)) //Si l'extension n'est pas dans le tableau
 {
-	$errmsg_arr[] = 'Vous devez uploader un fichier de type png, gif, jpg, jpeg...';
-	$errflag = true;
+	//Vous devez uploader un fichier de type png, gif, jpg, jpeg...
+	echo "100";
+	exit();
 }
 if($taille>$taille_maxi)
 {
-	$errmsg_arr[] = 'Le fichier est trop gros...';
-	$errflag = true;
+	//Le fichier est trop gros...
+	echo "101";
+	exit();
 }
 if($errflag == false) //S'il n'y a pas d'erreur, on upload
 {
@@ -31,12 +33,12 @@ if($errflag == false) //S'il n'y a pas d'erreur, on upload
      $fichier = preg_replace('/([^.a-z0-9]+)/i', '-', $fichier);
      if(move_uploaded_file($_FILES['upload']['tmp_name'], $dossier . $fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
      {
-     	$errflag == false;
      }
      else //Sinon (la fonction renvoie FALSE).
      {
-     	$errmsg_arr[] = 'Echec de l\'upload !';
-		$errflag = true;
+		 //Echec de l\'upload !
+		echo "102";
+		exit();
      }
 }
 
@@ -48,7 +50,6 @@ $Region = "";
 $Url = "";
 $Prix = "";
 $Places = "";
-$Date = "";
 
 $Libelle = $_POST['lib'];
 $Descrip = $_POST['comment'];
@@ -62,15 +63,23 @@ $Visio = $_POST['Visio'];
 $mail = $_POST['mail'];
 //$fichier
 
-if (!isset($Descrip) AND $Descrip == ""){
-$errmsg_arr[] = 'Il faut une Description...';
-		$errflag = true;
+if (!isset($Descrip) OR $Descrip == ""){
+	//Il faut une Description...
+	echo "200";
+	exit();
 }
 
-if (!isset($Libelle) AND $Libelle == ""){
-$errmsg_arr[] = 'Il faut un Libelle...';
-		$errflag = true;
+if (!isset($Libelle) OR $Libelle == ""){
+//Il faut un Libelle...
+	echo "201";
+	exit();
 }
+if (!isset($Date) OR $Date == ""){
+//Il faut une date...
+	echo "202";
+	exit();
+}
+
 
 // configuration
 include('config.php');
@@ -82,7 +91,7 @@ if ($errflag == false){
     }
 catch(PDOException $e)
     {
-    echo "24";
+        echo "Connextion a la base de donné imposible, check config.php";
     exit();
     }
 
@@ -101,12 +110,10 @@ catch(PDOException $e)
 	$result->bindParam(':mail', $mail);
 
 	$result->execute();
-	unset($_SESSION['ERRMSG_ARR']);
-	header("location: wait.php");
+	echo "42";
 	}
 	     else
      {
-		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
-		header("location: index.php?id=2");
+		echo "203";
      }
 ?>
