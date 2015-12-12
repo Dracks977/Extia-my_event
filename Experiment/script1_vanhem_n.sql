@@ -56,4 +56,15 @@ CREATE TABLE CLE
     Cle char(64)
 );
 
+CREATE TABLE Feedback
+(
+    ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	Libelle_event VARCHAR(255),
+	Nom CHAR(32),
+    Prenom CHAR(32),
+	Note INT,
+    Description VARCHAR(510),
+    Date_creation DATE
+);
+
 INSERT INTO Admin (user, pass)VALUES ("Admin","06bd29e0206e7d373099fbf86f05efa8620b9eb32f9e7be6eb7ba39ed444e28b");
