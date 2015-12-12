@@ -7,7 +7,7 @@ CREATE TABLE User
     Nom CHAR(32),
     Prenom CHAR(32),
     Mail varchar(255),
-    Pass varchar(1000),
+    Pass char(64),
     Date_creation DATE,
     Date_modification DATE
 );
@@ -50,10 +50,10 @@ CREATE TABLE Region
     Libelle VARCHAR(255)
 );
 
-CREATE TABLE Categorie_Event
+CREATE TABLE CLE
 (
-    ID_categorie TINYINT,
-    ID_Event INT
+    ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    Cle char(64)
 );
 
 INSERT INTO Admin (user, pass)VALUES ("Admin","06bd29e0206e7d373099fbf86f05efa8620b9eb32f9e7be6eb7ba39ed444e28b");
