@@ -66,5 +66,11 @@ CREATE TABLE Feedback
     Description VARCHAR(510),
     Date_creation DATE
 );
+CREATE TABLE Event_User
+(
+    ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	ID_event INT,
+	ID_user INT
+);
 
 INSERT INTO Admin (user, pass)VALUES ("Admin","06bd29e0206e7d373099fbf86f05efa8620b9eb32f9e7be6eb7ba39ed444e28b");
