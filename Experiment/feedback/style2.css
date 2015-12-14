@@ -1,0 +1,16 @@
+div {
+    display: inline-block;
+}
+
+.rating a {
+   float: right;
+   color: #394147;
+   text-decoration: none;
+   font-size: 3em;
+   transition: color .4s;
+}
+
+.rating a:hover,.rating a:focus,.rating a:hover ~ a,.rating a:focus ~ a {
+   color:  #F26e27;
+   cursor: pointer;
+}
