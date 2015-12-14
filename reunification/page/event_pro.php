@@ -26,9 +26,10 @@
     </div>
     <div class="txt1">
       <p id="cat1">Cat&eacutegorie</p>
-        <button>Festif</button><button>Professionnel</button>
+        <button id="bouton">Festif</button><button id="bouton">Professionnel</button>
       <p id="ville1">Ville</p>
-        <button>Paris</button><button>Aix-en-Provence</button><button>Lille</button><button>Sophia-Antipolis</button></br><button>Bruxelles</button>
+        <button id="bouton">Paris</button><button id="bouton">Aix-en-Provence</button><button id="bouton">Lille</button><br>
+        <button id="bouton">Sophia-Antipolis</button><button id="bouton">Bruxelles</button>
     </div>
   </div>
   <div class="case_one">
@@ -86,9 +87,9 @@
     </div>
   </nav>
   </footer>
-<script type="text/javascript" src="js/logohover.js"></script>
-<script type="text/javascript" src="js/ajax.js"></script>
-<script type="text/javascript" src="js/footer_fleche.js"></script>
+<script type="text/javascript" src="../js/logohover2.js"></script>
+<script type="text/javascript" src="../js/ajax.js"></script>
+<script type="text/javascript" src="../js/footer_fleche.js"></script>
 <script type="text/javascript">
   fleche()
 </script>
