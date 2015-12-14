@@ -55,11 +55,10 @@ else if($passh2 != $passh) {
 
 // verif double compte
 
-	$result3 = $conn->prepare("SELECT * FROM CLE WHERE Cle= :cle");
-	$result3->bindParam(':cle', $cleh);
+	$result3 = $conn->prepare("SELECT * FROM CLE");
 	$result3->execute();
-	$rows = $result2->fetch(PDO::FETCH_NUM);
-	if($rows > 0) {
+	$rows = $result3->fetch(PDO::FETCH_NUM);
+	if($rows['1'] != $cleh) {
 		echo "102";
 		exit();
 	}

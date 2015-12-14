@@ -7,7 +7,7 @@ CREATE TABLE User
     Nom CHAR(32),
     Prenom CHAR(32),
     Mail varchar(255),
-    Pass char(64),
+    Pass varchar(200),
     Date_creation DATE,
     Date_modification DATE
 );
@@ -39,7 +39,7 @@ CREATE TABLE Categories
 CREATE TABLE Admin
 (
     ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    pass varchar(1000),
+    pass varchar(200),
     user CHAR(32)
 );
 
@@ -53,7 +53,7 @@ CREATE TABLE Region
 CREATE TABLE CLE
 (
     ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    Cle char(64)
+    Cle varchar(200)
 );
 
 CREATE TABLE Feedback
