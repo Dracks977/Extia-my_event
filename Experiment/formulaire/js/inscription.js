@@ -42,6 +42,12 @@ $(document).ready( function () {
                  else if (msg =="207"){
                     $("span#erreur").html("Vous avez deja un compte.");
                 }
+                else if (msg =="101"){
+                    $("span#erreur").html("Veuillez entrer la cle Extia.");
+                }
+                else if (msg =="102"){
+                    $("span#erreur").html("La cle Extia ne correspond pas.");
+                }
 
                             
            }

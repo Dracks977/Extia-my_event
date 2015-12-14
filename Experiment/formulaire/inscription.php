@@ -2,6 +2,7 @@
 <html>
 
 <header>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Extia Events</title>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -32,11 +33,12 @@
 	<label for='mail'>Adresse mail * : </label><input id='mail' name='mail' type='text'></input></br>
 	<label for='pass'>Mot de passe * : </label><input id='pass' name='pass' type='password'></input></br>
 	<label for='pass2'>Confirmation * : </label><input id='pass2' name='pass2' type='password'></input></br>
-    </br><input type='submit' value='Envoyer' id="bouton11"></br><br>
+  <label for='cle'>Clé Extia * : </label><input id='cle' name='cle' type='password'></input></br>
+    </br><input type='submit' value='Envoyer' id="bouton11"></input></br><br>
     </form>
 
     <i>* Champs obligatoires</i>
-    <span id="erreur"></span>
+    <span id="erreur"></span><br>
     </div>
 </body>
 
