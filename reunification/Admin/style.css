@@ -1,0 +1,281 @@
+body {
+    background-image: url("back5.png");
+    background-repeat: repeat;
+    background-size: 100%;
+    margin: 0px auto;
+}
+
+select {
+    padding:7px;
+    font-size:20px; 
+    text-align:center; 
+    border-width:3px; 
+    border-radius:30px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    min-width: 400px;
+    width: 400px;
+    height: 45px;
+    color: #F26e27;
+    background-color:#ffffff;
+}
+
+h4{
+color:#F26e27;
+font-size:20px; 
+}
+
+#fuck{
+color:black;
+}
+
+
+
+#submit {
+	margin:5px;
+    padding:5px 15px; 
+    background:#ffffff; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+#consub {
+padding:7px;
+font-size:20px; 
+text-align:center; 
+border-width:3px; 
+border-radius:50px; 
+border-color:#394147; 
+border-style:solid; 
+box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+width: 230px;
+background-color:#ffffff;
+}
+
+#header {
+	display: block;
+	background-image: url("head.png");
+	background-size: cover;
+	padding:1px;
+	height: 70px;
+    	font-weight: bold;
+}
+
+#wrap {
+	width: 1800px;
+	height: 800px;
+	margin-top: 10px;
+}
+
+#moite {
+    padding:5px;
+	width: 860px;
+	float: left;
+	margin: 10px;
+	height: 760px;
+}
+
+#logo{
+	width:50px;
+	float:left;
+	margin-right: 5%;
+}
+
+#logo1 {
+       width:50px;
+       float:right;
+       margin-left: 2%;
+}
+
+
+#logo2 {
+       width:50px;
+       float:left;
+}
+
+
+#logo3 {
+       width:50px;
+       float:right;
+}
+
+.l {
+   margin-top: 5px;
+}
+
+.bouton {
+    width:auto;
+    padding:8px 0;
+    text-align:center;
+    display: inline-block;
+    float:left;
+	margin: 15px;
+    border-radius:7px;
+    font-size: 0.85em;
+    width:120px;
+    color:#000;
+    font-family: Arial,sans-serif;
+}
+
+p {
+    color: #ffffff;
+}
+
+h1{
+    color: #F26e27;
+}
+
+textarea{
+    padding:7px;
+    font-size:20px; 
+    text-align:center; 
+    border-width:3px; 
+    border-radius:20px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    width: 400px;
+    height: 80px;
+    background-color:#ffffff;
+    color: #F26e27;
+}
+
+#Sbouton{
+    padding:7px;
+    font-size:20px; 
+    text-align:center; 
+    border-width:3px; 
+    border-radius:20px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    width: 400px;
+    height: 40px;
+    background-color:#F26e27;
+}
+
+#Ibouton{
+    padding:7px;
+    font-size:20px; 
+    text-align:center; 
+    border-width:3px; 
+    border-radius:20px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+      width: 400px;
+    height: 40px;
+    background-color:#F26e27;
+
+}
+
+#Eb{
+    padding:7px;
+    font-size:20px; 
+    text-align:center; 
+    border-width:3px; 
+    border-radius:20px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+   width: 400px;
+    height: 40px;
+    background-color:red;
+
+}
+
+
+#Ebouton{
+    padding:7px;
+    font-size:20px; 
+    text-align:center; 
+    border-width:3px; 
+    border-radius:20px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    width: 150px;
+    height: 40px;
+    background-color:red;
+    float:right;
+        margin-right: 15%;
+}
+
+#eventbox{
+    padding:7px;
+    font-size:20px; 
+    text-align:center; 
+    border-width:3px; 
+    border-radius:10px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    width: 400px;
+    height: 25px;
+    background-color:#ffffff;
+    color: #F26e27;
+
+
+}
+
+.bouton.large{font-size: 1.1em; width:220px;}
+
+
+.bouton.blanc, .bouton.blanc:active {
+	background: #F8F8F8;
+	background: -webkit-linear-gradient( #F8F8F8, #D7D7D7); 
+	background: -moz-linear-gradient( #F8F8F8, #D7D7D7); 
+	background: -ms-linear-gradient( #F8F8F8, #D7D7D7); 
+	background: -o-linear-gradient( #F8F8F8, #D7D7D7); 
+	background: linear-gradient( #F8F8F8, #D7D7D7);
+	text-shadow: 0px 2px 0px rgba( 255, 255, 255, 0.8);
+	}
+.bouton.blanc:hover{ 
+	background: #F5F5F5;
+	background: -webkit-linear-gradient( #FFF, #CCC);
+	background: -moz-linear-gradient( #FFF, #CCC);
+	background: -ms-linear-gradient( #FFF, #CCC);
+	background: -o-linear-gradient( #FFF, #CCC);
+	background: linear-gradient( #FFF, #CCC);
+	}
+.bouton.blanc:active {box-shadow: 1px 1px 10px #CCC inset, 0 1px 0 rgba( 255, 255, 255, 0.4);}
+
+#log{
+    margin-left: 40%;
+    margin-top: 15%;
+    width: 400px;
+    height: 350px;
+    background-image: url("head.png");
+    border-radius:10px
+
+}
+
+#conbox { padding:7px; font-size:20px; text-align:center; border-width:3px; border-radius:50px; border-color:#394147; border-style:solid; box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43);  } 
+
+div.upload {
+    width: 400px;
+    border-width:3px; 
+    border-radius:10px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    height: 40px;
+    background: url("bouton.png");
+    overflow: hidden;
+}
+
+div.upload input {
+    display: block !important;
+    border-width:3px; 
+    border-radius:10px; 
+    border-color:#394147; 
+    border-style:solid; 
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    width: 400px !important;
+    height: 45px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
