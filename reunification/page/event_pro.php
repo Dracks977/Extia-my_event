@@ -26,11 +26,31 @@
     </div>
     <div class="txt1">
       <p id="cat1">Cat&eacutegorie</p>
-        <button id="bouton">Festif</button><button id="bouton">Professionnel</button>
+        <button id="Gbouton">Festif</button><button id="Gbouton">Professionnel</button>
       <p id="ville1">Ville</p>
       <?php include("../php/Tag_Listener.php"); ?>
     </div>
   </div>
+  <script type="text/javascript">
+
+$(document).ready( function () {
+ $couile = document.querySelectorAll('#bouton')
+    $($couile).click( function() {  
+    var i = $(this).text();                      
+        $.ajax({ 
+           type: "POST", 
+           url: "../php/Tagevent.php", 
+           data: "tag="+i, 
+           success: function(msg){
+          var y = document.querySelectorAll('.case_one');
+          $(y).remove();
+          $('body').append(msg);
+           }
+        });
+        return false; 
+});
+})
+  </script>
 
 <?php include("../php/event.php"); ?>
 

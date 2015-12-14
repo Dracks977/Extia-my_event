@@ -15,10 +15,10 @@ catch(PDOException $e)
 	while ($donnees = $result->fetch()){
 		$i++;
 		if ($i % 3 == 0){
-	echo "<button id='bouton'>" . $donnees['Libelle'] . "</button><br>";
+	echo "<button class='Tbouton' id='bouton'>" . $donnees['Libelle'] . "</button><br>";
 		}
 		else {
-	echo "<button id='bouton'>" . $donnees['Libelle'] . "</button>";
+	echo "<button class='Tbouton' id='bouton'>" . $donnees['Libelle'] . "</button>";
 		}
 
 
