@@ -74,3 +74,4 @@ CREATE TABLE Event_User
 );
 
 INSERT INTO Admin (user, pass)VALUES ("Admin","06bd29e0206e7d373099fbf86f05efa8620b9eb32f9e7be6eb7ba39ed444e28b");
+INSERT INTO CLE (cle) VALUES ("cd17c1d549a032fe2eecceec44e59b744e4f382a0bd02ceea68e888e5e940c4c");
