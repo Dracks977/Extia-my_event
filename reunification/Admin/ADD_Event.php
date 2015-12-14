@@ -5,7 +5,7 @@ $errmsg_arr = array();
 $errflag = false;
 
 //IMAGE
-$dossier = 'upload/';
+$dossier = '../upload/';
 $fichier = basename($_FILES['upload']['name']);
 $taille_maxi = 1099999;
 $taille = filesize($_FILES['upload']['tmp_name']);

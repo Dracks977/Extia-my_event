@@ -28,50 +28,11 @@
       <p id="cat1">Cat&eacutegorie</p>
         <button id="bouton">Festif</button><button id="bouton">Professionnel</button>
       <p id="ville1">Ville</p>
-        <button id="bouton">Paris</button><button id="bouton">Aix-en-Provence</button><button id="bouton">Lille</button><br>
-        <button id="bouton">Sophia-Antipolis</button><button id="bouton">Bruxelles</button>
+      <?php include("../php/Tag_Listener.php"); ?>
     </div>
   </div>
-  <div class="case_one">
-    <div class="image2">
-      <img class="i10" src="../img/10.jpg">
-    </div>
-    <div class="txt2">
-      <p id="title1">Titre</p>
-      <i id="lieu_date1">Date</i>
-      <p id="desc1">Description</p>
-    </div>
-  </div>
-  <div class="case_two">
-    <div class="image3">
-      <img class="i15" src="../img/15.jpg">
-    </div>
-    <div class="txt3">
-      <p id="title2">Titre</p>
-      <i id="lieu_date2">24 et 25 septembefferggvtrk</i>
-      <p id="desc2">Descriptigvetgoeorjiglkmhndj;kgon</p>
-    </div>
-  </div>
-  <div class="case_three">
-    <div class="image4">
-      <img class="i12" src="../img/12.jpg">
-    </div>
-    <div class="txt4">
-      <p id="title3">Titre</p>
-      <i id="lieu_date3">Date</i>
-      <p id="desc3">Description</p>
-    </div>
-  </div>
-  <div class="case_four">
-    <div class="image5">
-      <img class="i13" src="../img/13.jpg">
-    </div>
-    <div class="txt5">
-      <p id="title4">Titre</p>
-      <i id="lieu_date4">Date / Lieu</i>
-      <p id="desc4">Description</p>
-    </div>
-  </div>
+
+<?php include("../php/event.php"); ?>
 
 </body>
 <footer>
