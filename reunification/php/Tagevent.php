@@ -13,7 +13,7 @@ catch(PDOException $e)
 
 $tag = $_POST['tag'];
  
-    $result = $conn->prepare("SELECT * FROM Event WHERE Darte >= NOW() AND Region = :tag ORDER BY Darte LIMIT 0,4 ");
+    $result = $conn->prepare("SELECT * FROM Event WHERE Darte >= NOW() AND Region = :tag AND PoF = Professionnel ORDER BY Darte LIMIT 0,4 ");
     $result->bindParam('tag', $tag);
 		$result->execute();
 		while ($donnees = $result->fetch()){

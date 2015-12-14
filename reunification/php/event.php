@@ -12,7 +12,7 @@ catch(PDOException $e)
     }
 
  
-    	$result = $conn->prepare("SELECT * FROM Event WHERE Darte >= NOW() ORDER BY Darte LIMIT 0,4 ");
+    	$result = $conn->prepare("SELECT * FROM Event WHERE Darte >= NOW() AND PoF = Professionnel ORDER BY Darte LIMIT 0,4 ");
 		$result->execute();
 		while ($donnees = $result->fetch()){
 			echo "
