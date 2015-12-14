@@ -27,8 +27,8 @@
         <body>
         <div class="slideshow">
         <ul>
-        <li><img src="img/image1.jpg" alt="" width="1300" height="600" /></li>
-        <li><img src="img/image2.jpg" alt="" width="1300" height="600" /></li>
+        <li><img src="img/screen1.jpg" alt="" width="1300" height="600" /></li>
+        <li><img src="img/screen2.jpg" alt="" width="1300" height="600" /></li>
         <li><img src="img/image3.jpg" alt="" width="1300" height="600" /></li>
         <li><img src="img/image4.jpg" alt="" width="1300" height="600" /></li>
         </ul>
@@ -45,9 +45,9 @@
               </script>
         </div>
             <div class="description">
-            <a href="event_pro.php"><img src="1.png" id = "im1"></a>
-            <a href="event_fest.php"><img src="2.png" id = "im2"></a>
-            <a href="region.php"><img src="3.png" id = "im3"></a>
+            <a href="event_pro.php"><img src="img/1.png" id = "im1"></a>
+            <a href="event_fest.php"><img src="img/2.png" id = "im2"></a>
+            <a href="region.php"><img src="img/3.png" id = "im3"></a>
             <div class="wrapper">
             </div>
             <h1 align="center">Evenements a venir</h1>

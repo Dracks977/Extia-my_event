@@ -3,6 +3,7 @@ body{
     color:black;
     font-family:Gotham Rounded;
     font-size:14px;
+    padding-bottom: 250px;
 }
 .wrapper{
     margin:50px auto;
@@ -13,8 +14,6 @@ body{
 .content{
     position:absolute;
     background:white;
-    top:-1px;
-    left:-10px;
     height:400px;
     width:2800px;
     -webkit-transition:all 1s ease;

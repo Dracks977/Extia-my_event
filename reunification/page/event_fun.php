@@ -11,12 +11,12 @@
     <a href="connexion.php"><img alt="Connexion" src="../img/connexion1.png" id="connexion1"></a>
   </div>
   <nav id="menu_header">
-    <ul id="head">
-      <li class="h"><a href="../index.php"><img alt="Extia1" src="../img/accueil.png" id="acc" style="width:50px"></a></li>
-      <li class="h"><a href="event_pro.php"><img alt="Extia1" src="../img/pro.png" id="pro" style="width:50px"></a></li>
-      <li class="h"><a href="event_fun.php"><img alt="Extia1" src="../img/fun.png" id="fun" style="width:50px"></a></li>
-      <li class="h"><a href="contact.php"><img alt="Extia1" src="../img/contact.png" id="cont" style="width:50px"></a></li>
-    </ul>
+     <ul id="head">
+    <li class="h"><a href="../index.php" class="info"><img alt="Extia1" src="../img/accueil.png" id="acc" style="width:50px"><span class="lol">Accueil</span></a></li>
+    <li class="h"><a href="event_pro.php" class="info"><img alt="Extia1" src="../img/pro.png" id="pro" style="width:50px"><span class="mdr">Professionnel</span></a></li>
+    <li class="h"><a href="event_fun.php" class="info"><img alt="Extia1" src="../img/fun.png" id="fun" style="width:50px"><span class="je">Festif</span></a></li>
+    <li class="h"><a href="contact.php" class="info"><img alt="Extia1" src="../img/contact.png" id="cont" style="width:50px"><span class="sais">Contact</span></a></li>
+  </ul>
   </nav>
 </header>
 <body>
@@ -26,52 +26,33 @@
     </div>
     <div class="txt1">
       <p id="cat1">Cat&eacutegorie</p>
-        <button id="bouton">Festif</button><button id="bouton">Professionnel</button>
+        <button id="Gbouton">Festif</button><button id="Gbouton">Professionnel</button>
       <p id="ville1">Ville</p>
-        <button id="bouton">Paris</button><button id="bouton">Aix-en-Provence</button><button id="bouton">Lille</button><br>
-        <button id="bouton">Sophia-Antipolis</button><button id="bouton">Bruxelles</button>
+      <?php include("../php/Tag_Listener.php"); ?>
     </div>
   </div>
-  <div class="case_one">
-    <div class="image2">
-      <img class="i10" src="../img/10.jpg">
-    </div>
-    <div class="txt2">
-      <p id="title1">Titre</p>
-      <i id="lieu_date1">Date</i>
-      <p id="desc1">Description</p>
-    </div>
-  </div>
-  <div class="case_two">
-    <div class="image3">
-      <img class="i15" src="../img/15.jpg">
-    </div>
-    <div class="txt3">
-      <p id="title2">Titre</p>
-      <i id="lieu_date2">24 et 25 septembefferggvtrk</i>
-      <p id="desc2">Descriptigvetgoeorjiglkmhndj;kgon</p>
-    </div>
-  </div>
-  <div class="case_three">
-    <div class="image4">
-      <img class="i12" src="../img/12.jpg">
-    </div>
-    <div class="txt4">
-      <p id="title3">Titre</p>
-      <i id="lieu_date3">Date</i>
-      <p id="desc3">Description</p>
-    </div>
-  </div>
-  <div class="case_four">
-    <div class="image5">
-      <img class="i13" src="../img/13.jpg">
-    </div>
-    <div class="txt5">
-      <p id="title4">Titre</p>
-      <i id="lieu_date4">Date / Lieu</i>
-      <p id="desc4">Description</p>
-    </div>
-  </div>
+  <script type="text/javascript">
+
+$(document).ready( function () {
+ $couile = document.querySelectorAll('#bouton')
+    $($couile).click( function() {  
+    var i = $(this).text();                      
+        $.ajax({ 
+           type: "POST", 
+           url: "../php/Tagevent.php", 
+           data: "tag="+i, 
+           success: function(msg){
+          var y = document.querySelectorAll('.case_one');
+          $(y).remove();
+          $('body').append(msg);
+           }
+        });
+        return false; 
+});
+})
+  </script>
+
+<?php include("../php/event.php"); ?>
 
 </body>
 <footer>
