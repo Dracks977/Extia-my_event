@@ -13,6 +13,9 @@
 <div id="co">
 <a href="page/connexion.php"><img alt="Connexion" src="img/connexion1.png" id="connexion1"></a>
 </div>
+<div id="inscc">
+<a href="formulaire.php"><img alt="Connexion" src="img/insc3.png" id="deconnexion1" style="width : 40px;"></a>
+</div>
 <nav id="menu_header">
   <ul id="head">
     <li class="h"><a href="index.php" class="info"><img alt="Extia1" src="img/accueil.png" id="acc" style="width:50px"><span class="lol">Accueil</span></a></li>
