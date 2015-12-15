@@ -2,7 +2,7 @@ $(document).ready( function () {
     $("#connexionForm").submit( function() {                        
         $.ajax({ 
            type: "POST", 
-           url: "php/Vlogin.php", 
+           url: "../php/Vlogin.php", 
            data: "mail="+$("#mail").val()+"&pass="+$("#pass").val(), 
            success: function(msg){
            console.log(msg)

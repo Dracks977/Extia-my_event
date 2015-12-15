@@ -2,8 +2,8 @@ $(document).ready( function () {
     $("#connexionForm").submit( function() {                        
         $.ajax({ 
            type: "POST", 
-           url: "php/Vreg.php", 
-           data: "mail="+$("#mail").val()+"&pass="+$("#pass").val()+"&pass2="+$("#pass2").val()+"&nom="+$("#nom").val()+"&prenom="+$("#prenom").val(), 
+           url: "../php/Vreg.php", 
+           data: "mail="+$("#mail").val()+"&pass="+$("#pass").val()+"&pass2="+$("#pass2").val()+"&nom="+$("#nom").val()+"&prenom="+$("#prenom").val()+"&cle="+$("#cle").val(), 
            success: function(msg){ 
             console.log(msg);
                 if(msg == "42") 

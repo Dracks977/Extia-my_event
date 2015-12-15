@@ -58,9 +58,10 @@ else if($passh2 != $passh) {
 	$result3 = $conn->prepare("SELECT * FROM CLE WHERE Cle= :cle");
 	$result3->bindParam(':cle', $cleh);
 	$result3->execute();
-	$rows = $result2->fetch(PDO::FETCH_NUM);
+	$rows = $result3->fetch(PDO::FETCH_NUM);
 	if($rows > 0) {
 		echo "102";
+		echo $cleh;
 		exit();
 	}
 
