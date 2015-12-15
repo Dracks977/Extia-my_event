@@ -26,7 +26,7 @@ $(document).ready( function () {
     var i = $(this).text();                      
         $.ajax({ 
            type: "POST", 
-           url: "../php/Tagevent.php", 
+           url: "../php/TageventF.php", 
            data: "tag="+i, 
            success: function(msg){
           var y = document.querySelectorAll('.case_one');
@@ -39,7 +39,7 @@ $(document).ready( function () {
 })
   </script>
 
-<?php include("../php/event.php"); ?>
+<?php include("../php/eventF.php"); ?>
 
 </body>
 <footer>
