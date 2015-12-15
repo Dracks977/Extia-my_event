@@ -9,6 +9,8 @@ $(document).ready( function () {
                 if(msg == "42")    
                 {
                     $("span#erreur").html("Vous etes connecter.");
+                    alert("Vous etes connecter.");
+                    
      
                 }
                 else if (msg == "24")  
