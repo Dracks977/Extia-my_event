@@ -16,16 +16,16 @@ catch(PDOException $e)
 		$result->execute();
 		while ($donnees = $result->fetch()){
 			echo "
-			<div class='case_one'>
-    			<div class='image2'>
-    			  <img class='i10' src='../upload/" . $donnees['image'] . "'>
-    			</div>
-    			<div class='txt2'>
-      				<p id='title1'>" . $donnees['Libelle'] . "</p>
-      				<i id='lieu_date1'>" . $donnees['Darte'] . "</i>
-  	    			<p id='desc1'>" . $donnees['Description'] . "</p>
-    			</div>
-  			</div>
+      <a href='article.php?id=" . $donnees['ID'] . "'><div class='case_one'>
+          <div class='image2'>
+            <img class='i10' src='../upload/" . $donnees['image'] . "'>
+          </div>
+          <div class='txt2'>
+              <p id='title1'>" . $donnees['Libelle'] . "</p>
+              <i id='lieu_date1'>" . $donnees['Darte'] . "</i>
+              <p id='desc1'>" . $donnees['Description'] . "</p>
+          </div>
+        </div></a>
 			";
 
 

@@ -18,7 +18,7 @@ $tag = $_POST['tag'];
 		$result->execute();
 		while ($donnees = $result->fetch()){
 			echo "
-			<div class='case_one'>
+			<a href='article.php?id=" . $donnees['ID'] . "'><div class='case_one'>
     			<div class='image2'>
     			  <img class='i10' src='../upload/" . $donnees['image'] . "'>
     			</div>
@@ -27,7 +27,7 @@ $tag = $_POST['tag'];
       				<i id='lieu_date1'>" . $donnees['Darte'] . "</i>
   	    			<p id='desc1'>" . $donnees['Description'] . "</p>
     			</div>
-  			</div>
+  			</div></a>
 			";
 
 
