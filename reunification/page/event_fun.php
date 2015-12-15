@@ -13,7 +13,7 @@
     </div>
     <div class="txt1">
       <p id="cat1">Cat&eacutegorie</p>
-        <button id="Gbouton">Festif</button><button id="Gbouton">Professionnel</button>
+        <button id="Gbouton">Festif</button>&nbsp;&nbsp;<button id="Gbouton">Professionnel</button>
       <p id="ville1">Ville</p>
       <?php include("../php/Tag_Listener.php"); ?>
     </div>
