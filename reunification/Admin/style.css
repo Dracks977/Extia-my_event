@@ -84,6 +84,20 @@ background-color:#ffffff;
 	margin-right: 5%;
 }
 
+
+#logos{
+    width:50px;
+    float:left;
+    margin-right: 5%;
+}
+
+
+#logot{
+    width:50px;
+    float:left;
+    margin-right: 5%;
+}
+
 #logo1 {
        width:50px;
        float:right;
@@ -119,6 +133,110 @@ background-color:#ffffff;
     color:#000;
     font-family: Arial,sans-serif;
 }
+
+a.info span{
+display: none;
+}
+
+a.info:hover {
+   background: none; /* Correction d'un bug d'Internet Explorer. */
+   z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
+
+   cursor: help; /* On change le curseur par défaut par un curseur d'aide. */
+}
+
+a.info:hover span.les {
+   display: inline; /* On affiche l'infobulle. */
+   position: absolute;
+   white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+
+   left: 95%;
+   top: 8%;
+
+    background: #28282e;
+
+   color: white;
+   padding: 3px;
+
+  /* border-radius: 20px;*/
+}
+
+a.info:hover span.mdr {
+   display: inline; /* On affiche l'infobulle. */
+   position: absolute;
+   white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+
+   left: 91%;
+   top: 8%;
+
+    background: #28282e;
+
+   color: white;
+   padding: 3px;
+
+  /* border-radius: 20px;*/
+}
+
+a.info:hover span.lol{
+   display: inline; /* On affiche l'infobulle. */
+   position: absolute;
+   white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+   left: 1%;
+   top: 8%;
+
+   background: #28282e;
+
+   color: white;
+   padding: 3px;
+
+   /*border-radius: 20px;*/
+}
+
+a.info:hover span.je{
+   display: inline; /* On affiche l'infobulle. */
+   position: absolute;
+   white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+
+   top: 8%; /* On positionne notre infobulle. */
+   left: 16%;
+
+   background: #28282e;
+
+   color: white;
+   padding: 3px;
+
+  /* border-radius: 20px;*/
+}
+
+a.info:hover span.drole{
+   display: inline; /* On affiche l'infobulle. */
+   position: absolute;
+   white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+
+   top: 8%; /* On positionne notre infobulle. */
+   left: 24%;
+
+   background: #28282e;
+
+   color: white;
+   padding: 3px;
+
+  /* border-radius: 20px;*/
+}
+
+a.info:hover span.sais{
+   display: inline; /* On affiche l'infobulle. */
+   position: absolute;
+   white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+
+   top: 8%; /* On positionne notre infobulle. */
+   left: 9%;
+
+   background: #28282e;
+
+   color: white;
+   padding: 3px;
+ }
 
 p {
     color: #ffffff;

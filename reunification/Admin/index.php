@@ -20,12 +20,12 @@ session_start(); if(isset($_SESSION['Admin']) AND $_SESSION['Admin'] == true):  
 
 <div id='header'>
 
-<a href="index.php?id=1"><image class="l" id="logo" src="User.png"></image></a>
-<a href="index.php?id=2"><image class="l" id="logo" src="Event.png"></image></a>
-<a href="index.php?id=3"><image class="l" id="logo" src="Categ.png"></image></a>
-<a href="index.php?id=4"><image class="l" id="logo2" src="Stats.png" style="margin-right: 0%;"></image></a>
-<a href="other"><image class="l" id="logo1" src="Site.png" style="margin-right: 0;"></image></a>
-<a href="dest.php"><image class="l" id="logo3" src="deco.png" style="margin-right: 0;"></image></a>
+<a href="index.php?id=1" class="info"><image class="l" id="logo" src="User.png"></image><span class="lol">Utilisateurs</span></a>
+<a href="index.php?id=2" class="info"><image class="l" id="logos" src="Event.png"></image><span class="sais">Evenements</span></a>
+<a href="index.php?id=3" class="info"><image class="l" id="logot" src="Categ.png"></image><span class="je">Categorie</span></a>
+<a href="index.php?id=4" class="info"><image class="l" id="logo2" src="Stats.png" style="margin-right: 0%;"></image><span class="drole">Statistique</span></a>
+<a href="other" class="info"><image class="l" id="logo1" src="Site.png" style="margin-right: 0;"></image><span class="les">je sais pas</span></a>
+<a href="dest.php" class="info"><image class="l" id="logo3" src="deco.png" style="margin-right: 0;"></image><span class="mdr">Deconnexion</span></a>
 </div>
 
 <div id='wrap'>
