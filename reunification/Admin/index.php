@@ -125,9 +125,9 @@ if(isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count(
         <input type="hidden" name="MAX_FILE_SIZE" value="1099999">
         <input type="file" name="upload"/>
    </div>
- <p id="fuck">Prix : </p>
+ <p id="fuck">Prix (0 ou vide pour Gratuit): </p>
  <input id="eventbox" type="number" name="prix"><br>
- <p id="fuck">Place : </p>
+ <p id="fuck">Place (9999 pour illimite): </p>
  <input id="eventbox" type="number" name="place"><br>
  <p id="fuck">Date et heure (year-month-days H:M:S): </p>
  <input id="eventbox" type="datetime-local" name="drate"><br><br>
