@@ -85,16 +85,16 @@ pastordu();
 <?php if(isset($_GET['id']) AND $_GET['id'] == 2): ?>
  <section id='moite' > 
  <center><h1>Ajout Evenement</h1>
- <?php
-if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
-  echo '<ul style="padding:0; color:#ffff;">';
+<?php
+if(isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+  echo '<ul style="padding:0; color:red;">';
   foreach($_SESSION['ERRMSG_ARR'] as $msg) {
     echo '',$msg,'<br>'; 
   }
   echo '</ul>';
   unset($_SESSION['ERRMSG_ARR']);
 }
-?>
+?> 
  <form id="add" method="POST" action="ADD_Event.php" enctype="multipart/form-data">
  <p id="fuck">Libell&eacute; :</p>
  <input id="eventbox" name="lib" type="text" require><br>
@@ -127,7 +127,7 @@ if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count
  <input id="eventbox" type="number" name="prix"><br>
  <p id="fuck">Place : </p>
  <input id="eventbox" type="number" name="place"><br>
- <p id="fuck">Date et heure : </p>
+ <p id="fuck">Date et heure (year-month-days H:M:S): </p>
  <input id="eventbox" type="datetime-local" name="drate"><br><br>
  <input id="Sbouton" type="submit" value="Ajouter" style="color:white"><br><br></center>
  

@@ -14,15 +14,16 @@ $extension = strrchr($_FILES['upload']['name'], '.');
 //Début des vérifications de sécurité...
 if(!in_array($extension, $extensions)) //Si l'extension n'est pas dans le tableau
 {
-	//Vous devez uploader un fichier de type png, gif, jpg, jpeg...
-	echo "100";
-	exit();
+	//
+	$errmsg_arr[] = 'Vous devez uploader un fichier de type png, gif, jpg, jpeg...';
+	$errflag = true;
 }
 if($taille>$taille_maxi)
 {
 	//Le fichier est trop gros...
-	echo "101";
-	exit();
+	//
+	$errmsg_arr[] = 'Le fichier est trop gros...';
+	$errflag = true;
 }
 if($errflag == false) //S'il n'y a pas d'erreur, on upload
 {
@@ -36,10 +37,13 @@ if($errflag == false) //S'il n'y a pas d'erreur, on upload
      }
      else //Sinon (la fonction renvoie FALSE).
      {
-		 //Echec de l\'upload !
-		echo "102";
-		exit();
+		$errmsg_arr[] = 'Erreur Upload';
+		$errflag = true;
      }
+}
+else{
+$errmsg_arr[] = "Vous devez upload une image";
+$errflag = true;
 }
 
 //FIN IMAGE
@@ -64,20 +68,20 @@ $mail = $_POST['mail'];
 //$fichier
 
 if (!isset($Descrip) OR $Descrip == ""){
-	//Il faut une Description...
-	echo "200";
-	exit();
+	//
+	$errmsg_arr[] = 'Il faut une Description...';
+	$errflag = true;
 }
 
 if (!isset($Libelle) OR $Libelle == ""){
-//Il faut un Libelle...
-	echo "201";
-	exit();
+//
+	$errmsg_arr[] = 'Il faut un Libelle...';
+	$errflag = true;
 }
+
 if (!isset($Date) OR $Date == ""){
-//Il faut une date...
-	echo "202";
-	exit();
+	$errmsg_arr[] = 'Il faut une date...';
+	$errflag = true;
 }
 
 
@@ -110,10 +114,13 @@ catch(PDOException $e)
 	$result->bindParam(':mail', $mail);
 
 	$result->execute();
-	echo "42";
+	header("location: wait.php");
 	}
 	     else
      {
-		echo "203";
+	$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
+	session_write_close();
+	header("location: index.php?id=2");
+	exit();
      }
 ?>
