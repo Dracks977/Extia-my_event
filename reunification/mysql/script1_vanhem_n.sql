@@ -17,6 +17,7 @@ CREATE TABLE Event
     ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     Libelle VARCHAR(255),
     Description VARCHAR(510),
+    adr VARCHAR(510),
     image varchar(510),
     Prix FLOAT,
     Place INT,

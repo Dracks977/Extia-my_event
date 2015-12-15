@@ -116,6 +116,8 @@ if(isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count(
  </select><br>
  <p id="fuck">URL :</p>
  <input id="eventbox" type="url" name="url"><br>
+  <p id="fuck">Adresse :</p>
+ <input id="eventbox" type="text" name="adr"><br>
  <p id="fuck">Email Contact :</p>
  <input id="eventbox" type="mail" name="mail" require><br>
  <p id="fuck">Image :</p>

@@ -24,6 +24,7 @@ catch(PDOException $e)
 	<h4>Visio : </h4><p id='fuck'>" . $donnees["Visio"] . "</p><hr>
 	<h4>E-mail Contact : </h4><p id='fuck'>" . $donnees["Mail"] . "</p><hr>
 	<h4>URL : </h4><p id='fuck'>" . $donnees["Url"] . "</p><hr>
+	<h4>Adresse : </h4><p id='fuck'>" . $donnees["adr"] . "</p><hr>
 	<h4>Prix : </h4><p id='fuck'>" . $donnees["Prix"] . "</p><hr>
 	<h4>Nombre de places : </h4><p id='fuck'>" . $donnees["Place"] . "</p><hr>
 	<h4>Date et heure : </h4><p id='fuck'>" . $donnees["Darte"] . "</p><hr>
