@@ -5,20 +5,7 @@
 <title>Extia Events</title>
     <link rel='stylesheet' type='text/css' href='../css/styleform.css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<div id="logo"
-<a href="http://www.extia.fr"><img alt="Extia1" src="../img/Logo_FINAL3.png" id="hover"></a>
-</div>
-<div id="co">
-<a href="#"><img alt="Connexion" src="../img/connexion1.png" id="connexion1"></a>
-</div>
-<nav id="menu_header">
-  <ul id="head">
-    <li class="h"><a href="../accueil.php"><img alt="Extia1" src="../img/accueil.png" id="acc" style="width:50px"></a></li>
-    <li class="h"><a href="event_pro.php"><img alt="Extia1" src="../img/pro.png" id="pro" style="width:50px"></a></li>
-    <li class="h"><a href="event_fun .php"><img alt="Extia1" src="../img/fun.png" id="fun" style="width:50px"></a></li>
-    <li class="h"><a href="contact.php"><img alt="Extia1" src="../img/contact.png" id="cont" style="width:50px"></a></li>
-  </ul>
-</nav>
+<?php include("headerconnect.php"); ?>
 </header>
 
   <body>

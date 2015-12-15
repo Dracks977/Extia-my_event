@@ -5,20 +5,7 @@
 	<title>Extia Events</title>
     <link rel='stylesheet' type='text/css' href='style.css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<div id="logo"
-<a href="http://www.extia.fr"><img alt="Extia1" src="Logo_FINAL3.png" id="hover"></a>
-</div>
-<div id="co">
-<a href="#"><img alt="Connexion" src="connexion1.png" id="connexion1"></a>
-</div>
-<nav>
-  <ul>
-    <li><a href="#">Accueil</a></li>
-    <li><a href="#">Professionnel</a></li>
-    <li><a href="#">Festif</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
+<?php include("headerconnect.php"); ?>
 </header>
 
 <body>
