@@ -51,8 +51,10 @@ $Region = "";
 $Url = "";
 $Prix = "";
 $Places = "";
+$adr = "";
 
 $Libelle = $_POST['lib'];
+$adr = $_POST['adr'];
 $Descrip = $_POST['comment'];
 $FoP = $_POST['FP'];
 $Region = $_POST['region'];
@@ -98,11 +100,12 @@ catch(PDOException $e)
     }
 
 // $result = $conn->prepare("INSERT INTO Event (Libelle, Description, image, Prix, Place, Region, PoF, Url, Darte, Date_modification,Date_creation) VALUES ('Test', 'test', 'test', '5', '50', 'test', '1', '', '', NOW(), NOW() )");
-	$result = $conn->prepare("INSERT INTO Event (Libelle, Description, image, Prix, Place, Region, Visio, Mail, PoF, Url, Darte, Date_modification,Date_creation) VALUES (:Libelle, :Descrip, :Image, :Prix, :Places, :Region, :Visio, :mail, :FoP, :Url, :Darte, NOW(), NOW())");
+	$result = $conn->prepare("INSERT INTO Event (Libelle, adr, Description, image, Prix, Place, Region, Visio, Mail, PoF, Url, Darte, Date_modification,Date_creation) VALUES (:Libelle, :adr, :Descrip, :Image, :Prix, :Places, :Region, :Visio, :mail, :FoP, :Url, :Darte, NOW(), NOW())");
 	$result->bindParam(':Libelle', $Libelle);
 	$result->bindParam(':Descrip', $Descrip);
 	$result->bindParam(':FoP', $FoP);
 	$result->bindParam(':Region', $Region);
+	$result->bindParam(':adr', $adr);
 	$result->bindParam(':Url', $Url);
 	$result->bindParam(':Prix', $Prix);
 	$result->bindParam(':Places', $Places);
