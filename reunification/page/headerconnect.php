@@ -3,7 +3,6 @@ session_start();
 
 if(isset($_SESSION['c']) AND $_SESSION['c'] == true){
 echo "
-
 <div id='logo'
 <a href='http://www.extia.fr'><img alt='Extia1' src='../img/Logo_FINAL3.png' id='hover'></a>
 </div>
@@ -23,7 +22,6 @@ echo "
 }
 else{
   echo "
-
   <div id='logo'
 <a href='http://www.extia.fr'><img alt='Extia1' src='../img/Logo_FINAL3.png' id='hover'></a>
 </div>
