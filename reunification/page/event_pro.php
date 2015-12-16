@@ -13,7 +13,7 @@
       <img class="i6" src="../img/06.jpg">
     </div>
     <div class="txt1">
-      <p id="cat1">Cat&eacutegorie</p>
+      <p id="cat1">Cat&eacutegories</p>
         <button id="Gbouton">Festif</button>&nbsp;&nbsp;<button id="Gbouton">Professionnel</button>
       <p id="ville1">Ville</p>
       <?php include("../php/Tag_Listener.php"); ?>

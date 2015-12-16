@@ -32,12 +32,12 @@
               </script>
         </div>
             <div class="description">
-            <a href="event_pro.php"><img src="img/1.png" id = "im1"></a>
-            <a href="event_fest.php"><img src="img/2.png" id = "im2"></a>
-            <a href="region.php"><img src="img/3.png" id = "im3"></a>
+            <a href="event_pro.php"><img src="img/e2.png" id = "im1"></a>
+            <a href="event_fest.php"><img src="img/e2.png" id = "im2"></a>
+            <a href="region.php"><img src="img/e2.png" id = "im3"></a>
             <div class="wrapper">
             </div>
-            <h1 align="center">Evenements a venir</h1>
+            <h1 align="center">Évènements â venir</h1>
                 <div id="article1">
                     <div id="article2">
                         <div id="article3">

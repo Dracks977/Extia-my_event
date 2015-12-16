@@ -227,3 +227,23 @@ width: 400px;
 height: 150px;
 
 }
+
+#PopoPoue{
+width: 150px;
+background-color: #F26e27;
+border-color: #F26e27;
+border-width: 1px;
+border-radius: 10px;
+color:white;
+font-size: 13px;
+}
+
+#Poueloupoueloup{
+width: 150px;
+background-color: #F26e27;
+border-color: #F26e27;
+border-width: 1px;
+border-radius: 10px;
+color:white;
+font-size: 13px;
+}

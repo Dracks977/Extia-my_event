@@ -20,7 +20,6 @@ if (isset($_SESSION['c'])){
 	}
 echo "
 <div id='even'>
-    <img alt='pro' src='../img/logopro.png' id='inscription'>
 	<!---Ceci est le titre-->
     <h1>" . $donnees['Libelle'] . "</h1>
     <!--Ceci est la photo-->
@@ -39,15 +38,14 @@ echo "
     <!--L'URL se placera a la fin-->
     <p>Lien : " . $donnees['Url'] . "<p>
     <!--Ceci est le bouton pour s'inscrire-->
-	</br><input id='PopoPoue' type='submit' value='S'inscrire'></br>
-		<br><a href='contact.php'><input id='Poueloupoueloup' type='button' value='J'ai une question !'></input></a>
+	</br><input id='PopoPoue' type='submit' value=S'inscrire></br>
+		<br><a href='contact.php'><input id='Poueloupoueloup' type='button' value=J'ai&nbsp;une&nbsp;question&nbsp;!></input></a>
 	</div>
 	";
   }
   else{
 echo "
 <div id='even'>
-    <img alt='pro' src='../img/logopro.png' id='inscription'>
     <!---Ceci est le titre-->
     <h1>" . $donnees['Libelle'] . "</h1>
     <!--Ceci est la photo-->
