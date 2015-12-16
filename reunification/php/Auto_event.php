@@ -45,6 +45,15 @@ echo "
 	";
   }
   else{
+        if ($donnees['Prix'] == 0){
+        $donnees['Prix'] = "Gratuit";
+    }
+        if ($donnees['Place'] == 0){
+        $donnees['Place'] = "Complet";
+    }
+            if ($donnees['Place'] == 9999){
+        $donnees['Place'] = "Illimiter";
+    }
 echo "
 <div id='even'>
     <img alt='pro' src='../img/logopro.png' id='inscription'>
