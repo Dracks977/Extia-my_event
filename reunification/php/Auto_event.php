@@ -44,6 +44,15 @@ echo "
 	";
   }
   else{
+        if ($donnees['Prix'] == 0){
+        $donnees['Prix'] = "Gratuit";
+    }
+        if ($donnees['Place'] == 0){
+        $donnees['Place'] = "Complet";
+    }
+            if ($donnees['Place'] == 9999){
+        $donnees['Place'] = "Illimiter";
+    }
 echo "
 <div id='even'>
     <!---Ceci est le titre-->
