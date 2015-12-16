@@ -240,16 +240,7 @@ margin-right:40px;
 }
 
 .case_one,.case_two,.case_three,.case_four {
-	/*  background-color: white;
-	  float: left;
-	  padding-left: 0.05%;
-	  border-style: solid;
-    border-color: #28282e;
-	  border-width: 1px;
-	  padding-right: 50.5%;
-	  margin-top: 1%;
-	  margin-left: 1%;
-    border-radius: 10px;*/
+    text-decoration: none;
     background-color: white;
     padding-bottom: 0.05%;
     border-style: solid;

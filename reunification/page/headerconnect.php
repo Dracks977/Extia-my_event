@@ -40,7 +40,7 @@ else{
 <a href='connexion.php'><img alt='Connexion' src='../img/connexion1.png' id='connexion1'></a>
 </div>
 <div id='inscc'>
-<a href='formulaire.php'><img alt='Connexion' src='../img/insc3.png' id='deconnexion1' style='width : 40px;'></a>
+<a href='inscription.php'><img alt='Connexion' src='../img/insc3.png' id='deconnexion1' style='width : 40px;'></a>
 </div>
 <nav id='menu_header'>
   <ul id='head'>

@@ -14,10 +14,10 @@
         <body>
         <div class="slideshow">
         <ul>
-        <li><img src="img/screen1.jpg" alt="" width="1300" height="600" /></li>
-        <li><img src="img/screen2.jpg" alt="" width="1300" height="600" /></li>
-        <li><img src="img/image3.jpg" alt="" width="1300" height="600" /></li>
-        <li><img src="img/image4.jpg" alt="" width="1300" height="600" /></li>
+        <li><img src="" alt="" width="1300" height="600" /></li>
+        <li><img src="" alt="" width="1300" height="600" /></li>
+        <li><img src="" alt="" width="1300" height="600" /></li>
+        <li><img src="" alt="" width="1300" height="600" /></li>
         </ul>
             <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
