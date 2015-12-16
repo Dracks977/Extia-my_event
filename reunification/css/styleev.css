@@ -234,7 +234,7 @@ margin-right:40px;
     border-color: #28282e;
     border-width: 4px;
     padding-right: 1%;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-left: 1%;
     border-radius: 15px;
 }
@@ -250,16 +250,15 @@ margin-right:40px;
 	  margin-top: 1%;
 	  margin-left: 1%;
     border-radius: 10px;*/
-      background-color: white;
+    background-color: white;
     padding-bottom: 0.05%;
-    float:left;
-    padding-left: 1%;
     border-style: solid;
     border-color: #F26e27;
     border-width: 4px;
-    padding-right: 1000px;
-    margin-top: 2%;
-    margin-left: 1%;
+    padding-right: 20px;
+    margin-right: 20px;
+    margin-top: 5%;
+    margin-left: 420px;
     border-radius: 15px;
 
 }
@@ -278,7 +277,7 @@ padding-top: 15px;
 }
 
 .txt2,.txt3,.txt4,.txt5 {
-      display: inline;
+padding-left: 50px;
    /*   padding-right: 1px;
       padding-left: 10px;
      /*float: right;*/
