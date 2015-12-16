@@ -236,8 +236,8 @@ if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count
 	<center><br><form action="Plogin.php" method="POST">
 		<p><h1 style="color:#fffff0">Panel Admin</h1></p>
 		<input id="conbox" name="user" type="text" placeholder="Login"><br><br>
-		<input id="conbox" name="pass" type="password" name="" placeholder="passworld"><br><br><br><br>
-		<input id="consub" type="submit" value="Submit">
+		<input id="conbox" name="pass" type="password" placeholder="Mot de passe"><br><br><br><br>
+		<input id="consub" type="submit" value="Connexion">
 	</form></center>
 </div>
 
