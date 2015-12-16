@@ -37,7 +37,7 @@
             <a href="region.php"><img src="img/e2.png" id = "im3"></a>
             <div class="wrapper">
             </div>
-            <h1 align="center">Évènements â venir</h1>
+            <h1 align="center">Évènements à venir</h1>
                 <div id="article1">
                     <div id="article2">
                         <div id="article3">
