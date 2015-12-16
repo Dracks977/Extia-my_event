@@ -12,12 +12,15 @@
 <body>
 	<div id="ins">
 		<img alt="lettre" src="../img/lettre.png" id="inscription">
-		<h1>Contact</h1>
+		<h1>Contact Administrateur</h1>
 		<i>Veuillez remplir les champs pour contacter les admins.</i></br></br>
-		<label for='nom1'>Nom * : </label><input id='nom2' type='text'></input></br>
-		<label for='prenom1'>Pr&eacutenom * : </label><input id='prenom2' type='text'></input></br>
-		<label for='message1'>Message : * </label><textarea for="message1" style="max-width: 300px; max-height : 150px;"></textarea>
+		<form method="POST" action="Gmail.php">
+		<label for='nom1'>Nom * : </label><input name="nom" id='nom2' type='text'></input></br>
+		<label for='prenom1'>Pr&eacutenom * : </label><input name="prenom" id='prenom2' type='text'></input></br>
+		<label for='nom1'>Adresse Email : </label><input name="mail" id='nom2' type='mail'></input></br>
+		<label for='message1'>Message : * </label><textarea name="msg" form="opgg" style="max-width: 300px; max-height : 150px;"></textarea>
 		    </br><input type='submit' value='Envoyer'></br>
+		</form>
     <i>* Champs obligatoires</i>
 	</div>
 </body>
