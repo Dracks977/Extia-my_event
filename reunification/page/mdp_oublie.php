@@ -3,11 +3,10 @@
 
 <header>
 <title>Extia Events</title>
-    <link rel='stylesheet' type='text/css' href='../css/styleform.css'>
+    <link rel='stylesheet' type='text/css' href='../css/styleconex.css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <?php include("headerconnect.php"); ?>
 </header>
-
   <body>
     <div id="ins">
      <img alt="oubli" src="../img/oubliemdp.png" id="inscription">
