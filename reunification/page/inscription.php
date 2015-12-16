@@ -45,7 +45,7 @@
     </nav>
   </footer>
   <script type="text/javascript" src="../js/logohover2.js"></script>
-  <script type="text/javascript" src="../js/ajax.js"></script>
+  <script type="text/javascript" src="../js/inscription.js"></script>
   <script type="text/javascript" src="../js/finalfooter.js"></script>
   <script type="text/javascript">
     fleche()
