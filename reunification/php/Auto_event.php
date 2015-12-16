@@ -40,6 +40,25 @@ echo "
     <!--Ceci est le bouton pour s'inscrire-->
 	</br><input id='PopoPoue' type='submit' value=S'inscrire></br>
 		<br><a href='contact.php'><input id='Poueloupoueloup' type='button' value=J'ai&nbsp;une&nbsp;question&nbsp;!></input></a>
+
+        <script type='text/javascript'>
+
+$(document).ready( function () { 
+    $('#PopoPoue').click( function() {                        
+        $.ajax({ 
+           type: 'POST', 
+           url: '../php/Einsc.php', 
+           data: 'id=" . $donnees['ID'] . "', 
+           success: function(msg){
+          $('#event').detach()
+          msg.appendTo( 'body' );
+           }
+        });
+        return false; 
+});
+})
+
+</script>
 	</div>
 	";
   }
