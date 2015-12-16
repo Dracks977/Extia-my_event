@@ -14,7 +14,7 @@
     </div>
     <div class="txt1">
       <p id="cat1">Cat&eacutegories</p>
-        <button id="Gbouton">Fun</button>&nbsp;&nbsp;<button id="Gbouton">Pro</button>
+        <a href ="event_fun.php"><button id="Gbouton">Fun</button></a>&nbsp;&nbsp;<a href="event_pro.php"><button id="Gbouton">Pro</button></a>
       <p id="ville1">Villes</p>
       <?php include("../php/Tag_Listener.php"); ?>
     </div>
