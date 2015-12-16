@@ -115,7 +115,7 @@ catch(PDOException $e)
 	$result->bindParam(':mail', $mail);
 
 	$result->execute();
-	header("location: index.php?id=66");
+	header("location: wait.php");
 	}
 	else{
 		 $_SESSION['ERRMSG_ARR'] = $errmsg_arr;

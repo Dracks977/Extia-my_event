@@ -39,8 +39,8 @@ echo "
     <!--L'URL se placera a la fin-->
     <p>Lien : " . $donnees['Url'] . "<p>
     <!--Ceci est le bouton pour s'inscrire-->
-	</br><input type='submit' value='S'inscrire'></br>
-		<br><a href='contact.php'><input type='button' value='J'ai une question !'></input></a>
+	</br><input id='PopoPoue' type='submit' value='S'inscrire'></br>
+		<br><a href='contact.php'><input id='Poueloupoueloup' type='button' value='J'ai une question !'></input></a>
 	</div>
 	";
   }
