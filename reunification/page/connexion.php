@@ -21,7 +21,7 @@
 </form>
     <h5><i>* Champs obligatoires</i></h5><br><br><br>
     <span id="erreur"></span></br>
-    <a href="inscription.php/">Tu n'es pas encore inscrit ?</a></br>
+    <a href="inscription.php">Tu n'es pas encore inscrit ?</a></br>
     <a href="../Admin/">Panel admin</a></br>
     <a href="mdp_oublie.php">Mot de passe oubli&eacute; ?</a>
 	</div>
