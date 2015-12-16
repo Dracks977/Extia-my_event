@@ -16,7 +16,7 @@
 		<i>Veuillez remplir les champs pour contacter les admins.</i></br></br>
 		<label for='nom1'>Nom * : </label><input id='nom2' type='text'></input></br>
 		<label for='prenom1'>Pr&eacutenom * : </label><input id='prenom2' type='text'></input></br>
-		<label for='message1'>Message : * </label><textarea for="message1"></textarea>
+		<label for='message1'>Message : * </label><textarea for="message1" style="max-width: 300px; max-height : 150px;"></textarea>
 		    </br><input type='submit' value='Envoyer'></br>
     <i>* Champs obligatoires</i>
 	</div>

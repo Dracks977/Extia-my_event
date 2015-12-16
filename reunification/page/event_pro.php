@@ -14,8 +14,8 @@
     </div>
     <div class="txt1">
       <p id="cat1">Cat&eacutegories</p>
-        <button id="Gbouton">Festif</button>&nbsp;&nbsp;<button id="Gbouton">Professionnel</button>
-      <p id="ville1">Ville</p>
+        <button id="Gbouton">Fun</button>&nbsp;&nbsp;<button id="Gbouton">Pro</button>
+      <p id="ville1">Villes</p>
       <?php include("../php/Tag_Listener.php"); ?>
     </div>
   </div>
