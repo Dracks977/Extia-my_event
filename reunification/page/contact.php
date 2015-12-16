@@ -14,7 +14,7 @@
 		<img alt="lettre" src="../img/lettre.png" id="inscription">
 		<h1>Contact Administrateur</h1>
 		<i>Veuillez remplir les champs pour contacter les admins.</i></br></br>
-		<form method="POST" action="../php/Gmail.php">
+		<form id="opgg" method="POST" action="../php/Gmail.php">
 		<label for='nom1'>Nom * : </label><input name="nom" id='nom2' type='text'></input></br>
 		<label for='prenom1'>Pr&eacutenom * : </label><input name="prenom" id='prenom2' type='text'></input></br>
 		<label for='nom1'>Adresse Email : </label><input name="mail" id='nom2' type='mail'></input></br>

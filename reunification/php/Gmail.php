@@ -8,7 +8,7 @@ $objet = "E-My_Event / Question Admin"; // Objet du message
 $headers  = 'MIME-Version: 1.0' . "\n"; // Version MIME
 $headers .= 'Content-type: text/html; charset=ISO-8859-1'."\n"; // l'en-tete Content-type pour le format HTML
 $headers .= 'Reply-To: '.$expediteur."\n"; // Mail de reponse
-$headers .= 'From: "vanhem_n@etna-alternance.net"<'.$expediteur.'>'."\n"; // Expediteur
+$headers .= 'From: '. $expediteur .'<'.$expediteur.'>'."\n"; // Expediteur
 $headers .= 'Delivered-to: '.$destinataire."\n"; // Destinataire     
 $message = "
 Nom : " . $_POST['nom'] . "<br>
