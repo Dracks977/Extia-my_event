@@ -8,9 +8,41 @@
 <?php include("headerconnect.php"); ?>
 </header>
 <body>
+<?php
+
+include('../php/config.php');
+
+
+
+require_once("../activecalendar/source/activecalendar.php");
+$cal = new activeCalendar();
+
+try {
+    $conn = new PDO("mysql:host=$dbhost;dbname=$dbname;charset=utf8",$dbuser,$dbpass);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    }
+catch(PDOException $e)
+    {
+    echo "Connection failed (check config.php):   " . $e->getMessage();
+    }
+
+    $result = $conn->prepare("SELECT * FROM Event");
+    $result->execute();
+        while ($donnees = $result->fetch()){
+      $date = strtotime($donnees['Darte']);
+      $y = date('Y', $date);
+      $m = date('m', $date);
+      $d = date('d', $date);
+      $h = date('H', $date);
+      $i = date('i', $date);
+  $cal->setEvent($y,$m,$d,$donnees['Libelle'],"article.php?id={$donnees['ID']}"); // create a class="event" and an <a href="this_page.php">
+}
+
+?> 
   <div class="menu_gauche">
     <div class="image1">
-      <img class="i6" src="../img/06.jpg">
+         <center><?php print $cal->showMonth(); ?></center>
     </div>
     <div class="txt1">
       <p id="cat1">Cat&eacutegories</p>

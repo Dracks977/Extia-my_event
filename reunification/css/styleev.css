@@ -242,6 +242,7 @@ margin-right:40px;
 }
 
 .case_one,.case_two,.case_three,.case_four {
+    margin-top: 95px;
     text-decoration: none;
     background-color: white;
     padding-bottom: 0.05%;
