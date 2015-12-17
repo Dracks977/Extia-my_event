@@ -181,15 +181,15 @@ color: #F26e27;
 
 .img1 {
 	  margin-left: 5%;
-          width: 50px;
-          height: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: 1%;
 }
 
 #greatplace {
-  margin-bottom: 40px;
-  margin-top: -190px;
-      margin-left: 80%;
-          width: 180px;
+  margin-right: 6%;
+  float: right;
+  width: 200px;
 }
 
 /*Fleche vers le haut pour remarquer le footer*/

@@ -9,7 +9,7 @@ echo "
 <div id='co' style = 'color: #F26e27; padding-top : 40px;'>
 <a href='../php/dest.php' style='text-decoration: none; color : #F26e27;'><img id='decolol' style='width : 50px;' src='../img/deconoir.png'></img></a>
 </div>
-<div id ='colo' style='color : #F26e27; margin-left: 92%; padding-top: 20px; '
+<div id ='colo' style='color : #F26e27; float: right; margin-right: 3%; padding-top: 20px; '
 <p>" . $_SESSION['User_Nom'] . "_" . $_SESSION['User_Prenom'] ."</p>
 </div>
 <nav id='menu_header'>
