@@ -1,12 +1,9 @@
-@font-face {
-    font-family: "gotham";
-    src: url('../police/gotham.otf') format('truetype');
-}
+
 
 body{
     background:white;
     color:black;
-font-family: "gotham";
+font-family: Gotham Rounded;
     font-size:14px;
     padding-bottom: 250px;
 }
@@ -783,7 +780,7 @@ padding-left: 150px;
    height: 600px;
 }
 
-}    
+}
 
 @media only screen and (max-device-width:640px){
 
@@ -810,7 +807,7 @@ body{
     -o-transition:all 1s ease;
     transition:all 1s ease;
     clear:both;
-} 
+}
 .item{
     float:left;
     width:300px;

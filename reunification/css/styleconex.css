@@ -1,7 +1,4 @@
-@font-face {
-    font-family: "gotham";
-    src: url('../police/gotham.otf') format('truetype');
-}
+
 
 html, body {
 margin:0;
@@ -9,7 +6,7 @@ padding:0;
 font-size:100%;
 color:black;
 background-color:white;
-font-family: "gotham";
+font-family: Gotham Rounded;
 }
 
 label
@@ -35,7 +32,7 @@ width: 100%;
   background-color: #F26e27;
   opacity: 0.01;
   z-index:99999;
-  top: 0px; 
+  top: 0px;
   left: 0px;
 }
 
@@ -45,7 +42,7 @@ width: 100%;
   margin-left: 40%;
   min-width: 310px;
   max-width: 310px;
-  top: auto; 
+  top: auto;
   left: auto;
   border-radius: 5px;
   border: solid 5px blue;
@@ -1504,7 +1501,7 @@ border-color: #28282e;
     width: 100%;
   }
 
-  #menu_header 
+  #menu_header
   {
     font-family: Gotham Rounded;
     text-align: center;
@@ -1517,13 +1514,13 @@ border-color: #28282e;
     width:100%;
     background:#F26e27;
   }
- 
+
   #head
   {
     padding:2.5px;
     border-radius:2px;
   }
- 
+
   .h
   {
     display:inline;
@@ -1538,12 +1535,12 @@ border-color: #28282e;
     margin:0;
   }
 
-  .menu 
+  .menu
   {
     color:white;
     text-decoration:none;
   }
- 
+
   .menu:hover
   {
     color:#394147;
@@ -1590,7 +1587,7 @@ border-color: #28282e;
     font-size: 200%;
     margin-left: 5px;
   }
-  
+
   i
   {
     margin-left: 5px;

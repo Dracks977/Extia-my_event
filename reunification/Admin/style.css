@@ -1,25 +1,20 @@
-@font-face {
-    font-family: "gotham";
-    src: url('../police/gotham.otf') format('truetype');
-}
-
 body {
     background-image: url("back5.png");
     background-repeat: repeat;
     background-size: 100%;
     margin: 0px auto;
-    font-family: "gotham";
+    font-family: Gotham Rounded;
 }
 
 select {
     padding:7px;
-    font-size:20px; 
-    text-align:center; 
-    border-width:3px; 
-    border-radius:30px; 
-    border-color:#394147; 
-    border-style:solid; 
-    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    font-size:20px;
+    text-align:center;
+    border-width:3px;
+    border-radius:30px;
+    border-color:#394147;
+    border-style:solid;
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43);
     min-width: 400px;
     width: 400px;
     height: 45px;
@@ -29,7 +24,7 @@ select {
 
 h4{
 color:#F26e27;
-font-size:20px; 
+font-size:20px;
 }
 
 #fuck{
@@ -40,23 +35,23 @@ color:black;
 
 #submit {
 	margin:5px;
-    padding:5px 15px; 
-    background:#ffffff; 
+    padding:5px 15px;
+    background:#ffffff;
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 5px;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 #consub {
 padding:7px;
-font-size:20px; 
-text-align:center; 
-border-width:3px; 
-border-radius:50px; 
-border-color:#394147; 
-border-style:solid; 
-box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+font-size:20px;
+text-align:center;
+border-width:3px;
+border-radius:50px;
+border-color:#394147;
+border-style:solid;
+box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43);
 width: 230px;
 background-color:#ffffff;
 }
@@ -254,13 +249,13 @@ h1{
 
 textarea{
     padding:7px;
-    font-size:20px; 
-    text-align:center; 
-    border-width:3px; 
-    border-radius:20px; 
-    border-color:#394147; 
-    border-style:solid; 
-    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    font-size:20px;
+    text-align:center;
+    border-width:3px;
+    border-radius:20px;
+    border-color:#394147;
+    border-style:solid;
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43);
     width: 400px;
     height: 80px;
     background-color:#ffffff;
@@ -269,13 +264,13 @@ textarea{
 
 #Sbouton{
     padding:7px;
-    font-size:20px; 
-    text-align:center; 
-    border-width:3px; 
-    border-radius:20px; 
-    border-color:#394147; 
-    border-style:solid; 
-    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    font-size:20px;
+    text-align:center;
+    border-width:3px;
+    border-radius:20px;
+    border-color:#394147;
+    border-style:solid;
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43);
     width: 400px;
     height: 40px;
     background-color:#F26e27;
@@ -283,13 +278,13 @@ textarea{
 
 #Ibouton{
     padding:7px;
-    font-size:20px; 
-    text-align:center; 
-    border-width:3px; 
-    border-radius:20px; 
-    border-color:#394147; 
-    border-style:solid; 
-    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    font-size:20px;
+    text-align:center;
+    border-width:3px;
+    border-radius:20px;
+    border-color:#394147;
+    border-style:solid;
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43);
       width: 400px;
     height: 40px;
     background-color:#F26e27;
@@ -298,13 +293,13 @@ textarea{
 
 #Eb{
     padding:7px;
-    font-size:20px; 
-    text-align:center; 
-    border-width:3px; 
-    border-radius:20px; 
-    border-color:#394147; 
-    border-style:solid; 
-    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    font-size:20px;
+    text-align:center;
+    border-width:3px;
+    border-radius:20px;
+    border-color:#394147;
+    border-style:solid;
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43);
    width: 400px;
     height: 40px;
     background-color:red;
@@ -314,13 +309,13 @@ textarea{
 
 #Ebouton{
     padding:7px;
-    font-size:20px; 
-    text-align:center; 
-    border-width:3px; 
-    border-radius:20px; 
-    border-color:#394147; 
-    border-style:solid; 
-    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    font-size:20px;
+    text-align:center;
+    border-width:3px;
+    border-radius:20px;
+    border-color:#394147;
+    border-style:solid;
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43);
     width: 150px;
     height: 40px;
     background-color:red;
@@ -330,13 +325,13 @@ textarea{
 
 #eventbox{
     padding:7px;
-    font-size:20px; 
-    text-align:center; 
-    border-width:3px; 
-    border-radius:10px; 
-    border-color:#394147; 
-    border-style:solid; 
-    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    font-size:20px;
+    text-align:center;
+    border-width:3px;
+    border-radius:10px;
+    border-color:#394147;
+    border-style:solid;
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43);
     width: 400px;
     height: 25px;
     background-color:#ffffff;
@@ -350,14 +345,14 @@ textarea{
 
 .bouton.blanc, .bouton.blanc:active {
 	background: #F8F8F8;
-	background: -webkit-linear-gradient( #F8F8F8, #D7D7D7); 
-	background: -moz-linear-gradient( #F8F8F8, #D7D7D7); 
-	background: -ms-linear-gradient( #F8F8F8, #D7D7D7); 
-	background: -o-linear-gradient( #F8F8F8, #D7D7D7); 
+	background: -webkit-linear-gradient( #F8F8F8, #D7D7D7);
+	background: -moz-linear-gradient( #F8F8F8, #D7D7D7);
+	background: -ms-linear-gradient( #F8F8F8, #D7D7D7);
+	background: -o-linear-gradient( #F8F8F8, #D7D7D7);
 	background: linear-gradient( #F8F8F8, #D7D7D7);
 	text-shadow: 0px 2px 0px rgba( 255, 255, 255, 0.8);
 	}
-.bouton.blanc:hover{ 
+.bouton.blanc:hover{
 	background: #F5F5F5;
 	background: -webkit-linear-gradient( #FFF, #CCC);
 	background: -moz-linear-gradient( #FFF, #CCC);
@@ -377,15 +372,15 @@ textarea{
 
 }
 
-#conbox { padding:7px; font-size:20px; text-align:center; border-width:3px; border-radius:50px; border-color:#394147; border-style:solid; box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43);  } 
+#conbox { padding:7px; font-size:20px; text-align:center; border-width:3px; border-radius:50px; border-color:#394147; border-style:solid; box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43);  }
 
 div.upload {
     width: 400px;
-    border-width:3px; 
-    border-radius:10px; 
-    border-color:#394147; 
-    border-style:solid; 
-    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    border-width:3px;
+    border-radius:10px;
+    border-color:#394147;
+    border-style:solid;
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43);
     height: 40px;
     background: url("bouton.png");
     overflow: hidden;
@@ -393,11 +388,11 @@ div.upload {
 
 div.upload input {
     display: block !important;
-    border-width:3px; 
-    border-radius:10px; 
-    border-color:#394147; 
-    border-style:solid; 
-    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43); 
+    border-width:3px;
+    border-radius:10px;
+    border-color:#394147;
+    border-style:solid;
+    box-shadow: 1px 1px 5px 0px rgba(242,110,39,.43);
     width: 400px !important;
     height: 45px !important;
     opacity: 0 !important;

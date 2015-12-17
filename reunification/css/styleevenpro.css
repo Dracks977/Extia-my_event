@@ -1,7 +1,4 @@
-@font-face {
-    font-family: "gotham";
-    src: url('../police/gotham.otf') format('truetype');
-}
+
 
 html, body {
 margin:0;
@@ -9,7 +6,7 @@ padding:0;
 font-size:100%;
 color:black;
 background-color:white;
-font-family: "gotham";
+font-family: Gotham Rounded;
 }
 
 /*Largeur de la fenetre*/
