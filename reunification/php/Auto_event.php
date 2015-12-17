@@ -16,7 +16,7 @@ if (isset($_SESSION['c'])){
 		$donnees['Place'] = "Complet";
 	}
 			if ($donnees['Place'] == 9999){
-		$donnees['Place'] = "Illimiter";
+		$donnees['Place'] = "Illimité";
 	}
 echo "
 <div id='even'>
@@ -50,7 +50,7 @@ echo "
         $donnees['Place'] = "Complet";
     }
             if ($donnees['Place'] == 9999){
-        $donnees['Place'] = "Illimiter";
+        $donnees['Place'] = "Illimité";
     }
 echo "
 <div id='even'>
