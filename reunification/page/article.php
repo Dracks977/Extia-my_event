@@ -21,7 +21,8 @@ if(isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count(
   unset($_SESSION['ERRMSG_ARR']);
 }
 ?> 
-<?php include("../php/Auto_event.php") ?>
+<?php include("../php/Auto_event.php"); ?>
+<center><span id='user' style='display:none;width:0px;height:0px;'><ul><?php include('../php/listu.php'); ?></ul></span></center>
 </body>
 <footer>
     <nav id="menu_footer">

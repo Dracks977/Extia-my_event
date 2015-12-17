@@ -5,7 +5,8 @@ $id = $_GET['id'];
 
 include('config.php');
 $conn = new PDO("mysql:host=$dbhost;dbname=$dbname;charset=utf8",$dbuser,$dbpass);
-$reponse = $conn->query("SELECT * FROM Event WHERE ID={$id}");
+$reponse = $conn->prepare("SELECT * FROM Event WHERE ID={$id}");
+$reponse->execute();
 $donnees = $reponse->fetch();
 
         $date = strtotime($donnees['Darte']);
@@ -49,7 +50,8 @@ echo "
     <form action='../php/Einsc.php?id=" . $id . "' method='POST'>
 	</br><input id='PopoPoue' type='submit' value=S'inscrire></br>
     </form>
-		<br><a href='contact.php'><input id='Poueloupoueloup' type='button' value=J'ai&nbsp;une&nbsp;question&nbsp;!></input></a>
+		<br><a href='contact.php'><input id='Poueloupoueloup' type='button' value=J'ai&nbsp;une&nbsp;question&nbsp;!></input></a><br>
+		<input id='Poueloupoueloup' type='button' value='Membres inscrits'></input>
 	</div>
 	";
   }
