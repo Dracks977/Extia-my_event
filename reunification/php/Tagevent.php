@@ -12,24 +12,42 @@ catch(PDOException $e)
     }
 
 $tag = $_POST['tag'];
- 
+  $i = 0;
     $result = $conn->prepare("SELECT * FROM Event WHERE Darte >= NOW() AND Region = :tag AND PoF = 'Professionnel' ORDER BY Darte LIMIT 0,4 ");
     $result->bindParam('tag', $tag);
 		$result->execute();
 		while ($donnees = $result->fetch()){
-			echo "
-			<a style ='text-decoration : none;' href='article.php?id=" . $donnees['ID'] . "'><div class='case_one'>
-    			<div class='image2'>
-    			  <img class='i10' src='../upload/" . $donnees['image'] . "'>
-    			</div>
-    			<div class='txt2'>
-      				<p id='title1'>" . $donnees['Libelle'] . "</p>
-      				<i id='lieu_date1'>" . $donnees['Darte'] . "</i>
-  	    			<p id='desc1'>" . $donnees['Description'] . "</p>
-    			</div>
-  			</div></a>
-			";
 
+      if ($i == 0){
+      echo "
+      <a style ='text-decoration : none;' href='article.php?id=" . $donnees['ID'] . "'><div class='case_pouet'>
+          <div class='image2'>
+            <img class='i10' src='../upload/" . $donnees['image'] . "'>
+          </div>
+          <div class='txt2'>
+              <p id='title1'>" . $donnees['Libelle'] . "</p>
+              <i id='lieu_date1'>" . $donnees['Darte'] . "</i>
+              <p id='desc1'>" . $donnees['Description'] . "</p>
+          </div>
+        </div></a>
+      ";
+      }
+      else{
+      echo "
+      <a style ='text-decoration : none;' href='article.php?id=" . $donnees['ID'] . "'><div class='case_one'>
+          <div class='image2'>
+            <img class='i10' src='../upload/" . $donnees['image'] . "'>
+          </div>
+          <div class='txt2'>
+              <p id='title1'>" . $donnees['Libelle'] . "</p>
+              <i id='lieu_date1'>" . $donnees['Darte'] . "</i>
+              <p id='desc1'>" . $donnees['Description'] . "</p>
+          </div>
+        </div></a>
+      ";
+      }
+
+      $i++;
 
 }
 
