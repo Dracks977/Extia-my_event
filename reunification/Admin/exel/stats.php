@@ -33,6 +33,8 @@ catch(PDOException $e)
 
 	$fichier = new FichierExcel();
 	$fichier->Colonne("Event;Nombre d'inscrit");
+
+	$ll = "";
 	
 	while ($donnees = $result->fetch()){
 
@@ -40,6 +42,7 @@ catch(PDOException $e)
 	$result3->execute();
 	$rows = $result3->rowCount();
  	$fichier->Insertion("{$donnees['Libelle']};{$rows}");
+ 	$ll = $ll . $donnees['Libelle'] . ";";
 }
 
 	$fichier->output('Event-Stats');
