@@ -8,5 +8,5 @@
 
 <meta http-equiv="refresh" content="1;URL=../index.php">
 <body>
-<p style = "color: #F26e27; font-size : 20px; text-align : center; margin-top : 15%;">Vous êtes inscrit(e) à l'évènement.</p>
+<p style = "color: #F26e27; font-size : 20px; text-align : center; margin-top : 15%;">Vous êtes connecté(e) !</p>
 </body>

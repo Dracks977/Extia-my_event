@@ -8,12 +8,7 @@ $(document).ready( function () {
            console.log(msg)
                 if(msg == "42")    
                 {
-                    $("span#erreur").html("Vous etes connecté(e) !");
-                    alert("Tu es connect&eacute;(e) !.");
-                    var obj =  document.location.href= "../index.php"; 
-                    setTimeout(obj,1000); 
-                                   
-     
+                    document.location.href= "Connecok.php"; 
                 }
                 else if (msg == "24")  
                 {

@@ -8,8 +8,7 @@ $(document).ready( function () {
             console.log(msg);
                 if(msg == "42") 
                 {
-                    alert("Vous etes inscrit.")
-     
+                    document.location.href= "inscok.php";      
                 }
                 else if (msg == "24")  
                 {
