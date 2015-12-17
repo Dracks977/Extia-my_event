@@ -27,8 +27,15 @@ catch(PDOException $e)
 	$result3->execute();
 	$rows = $result3->fetch(PDO::FETCH_NUM);
 	if($rows > 0) {
-		echo "<center><br><br><br><br><br><br><br><br><p>Vous etes deja inscrit</p></center>";
-		echo "<meta http-equiv='refresh' content='1;URL=../index.php'>";
+		echo "<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+
+    <link rel='stylesheet' type='text/css' href='../css/styleevenpro.css'>
+    <link rel='stylesheet' type='text/css' href='../css/styleconex.css'>
+
+<meta http-equiv='refresh' content='1;URL=../index.php'>
+<body>
+<p style = 'color: #F26e27; font-size : 20px; text-align : center; margin-top : 15%;'>Vous êtes déjà inscrit !</p>
+</body>";
 		exit();
 	}
 
