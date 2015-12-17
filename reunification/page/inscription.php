@@ -21,11 +21,11 @@
 	<label for='pass'>Mot de passe * : </label><input id='pass' name='pass' type='password'></input></br>
 	<label for='pass2'>Confirmation * : </label><input id='pass2' name='pass2' type='password'></input></br>
   <label for='cle'>Clé Extia * : </label><input id='cle' name='cle' type='password'></input></br>
-    </br><input type='submit' value='Envoyer' id="bouton11"></input></br><br>
+    </br><input type='submit' value='Envoyer' id="bouton11"></input></br></br>
     </form>
 
     <i>* Champs obligatoires</i>
-    <span id="erreur"></span><br>
+    <span id="erreur"></span>
     </div>
 </body>
 

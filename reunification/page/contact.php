@@ -18,7 +18,7 @@
 		<label for='nom1'>Nom * : </label><input name="nom" id='nom2' type='text'></input></br>
 		<label for='prenom1'>Pr&eacutenom * : </label><input name="prenom" id='prenom2' type='text'></input></br>
 		<label for='nom1'>Adresse Email : </label><input name="mail" id='nom2' type='mail'></input></br>
-		<label for='message1'>Message : * </label><textarea name="msg" form="opgg" style="max-width: 130px; max-height : 150px;"></textarea>
+		<label for='message1'>Message : * </label><textarea name="msg" id="txtarea1" form="opgg" style="max-width: 130px; max-height : 150px;"></textarea>
 		    </br><input id="mega" type='submit' value='Envoyer'></br>
 		</form>
     <i>* Champs obligatoires</i>

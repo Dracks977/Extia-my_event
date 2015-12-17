@@ -36,7 +36,7 @@ session_start(); if(isset($_SESSION['Admin']) AND $_SESSION['Admin'] == true):  
 <?php if(!isset($_GET['id']) OR $_GET['id'] == 1): ?>
 
 <section id='moite' > 
- <center><h1>Information utilisateurs</h1>
+ <center><h1>Informations utilisateurs</h1>
  <select id="N_User" name="N_User">
   <?php include("User_Lister.php"); ?>
  </select><br><br>
@@ -141,7 +141,7 @@ if(isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count(
 </section>
 <?php if(!isset($_GET['id']) OR $_GET['id'] == 1): ?>
 	 <section id='moite' > 
- <center><h1>Supression Utilisateur</h1></center>
+ <center><h1>Suppressions utilisateurs</h1></center>
  <center><form action="SUPP_User.php" method="POST">
  <select id="userp" name="user">
   <?php include("User_Lister.php"); ?>
@@ -161,7 +161,7 @@ if(isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count(
 <?php if(isset($_GET['id']) AND $_GET['id'] == 2): ?>
 
  <section id='moite' > 
- <center><h1>Supression évènement</h1></center><br><br>
+ <center><h1>Suppressions évènements</h1></center><br><br>
  <center><form action="SUPP_Event.php" method="POST">
  <select id="N_event" name="N_event">
   <?php include("Event_Lister.php"); ?>
@@ -201,7 +201,7 @@ pastord();
 
  <?php if(isset($_GET['id']) AND $_GET['id'] == 3): ?>
    <section id='moite' > 
- <center><h1>Supression de villes</h1></center><br><br>
+ <center><h1>Suppression de villes</h1></center><br><br>
  <center><form action="SUPP_Tag.php" method="POST">
  <select id="tagsel" name="Tag">
   <?php include("Tag_Lister.php"); ?>
