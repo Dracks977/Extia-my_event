@@ -155,6 +155,7 @@ margin-left: 33.33%;
 
 #im1, #im2, #im3
 {
+display: none;
 margin-top: 20px;
 width: 350px;
 height: 250px;
@@ -757,7 +758,7 @@ padding-left: 50px;
 padding-left: 50px;
 }
 .slideshow {
-   margin-top: 25px;
+   margin-top: 70px;
    margin-left: 3.8%;
    width: 290px;
    height: 200px;

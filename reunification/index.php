@@ -32,9 +32,9 @@
               </script>
         </div>
             <div class="description">
-            <a href="event_pro.php"><img src="img/e2.png" id = "im1"></a>
-            <a href="event_fest.php"><img src="img/e2.png" id = "im2"></a>
-            <a href="region.php"><img src="img/e2.png" id = "im3"></a>
+            <a href="event_pro.php"><img src="img/e2.png" id="im1"></a>
+            <a href="event_fest.php"><img src="img/e2.png" id="im2"></a>
+            <a href="region.php"><img src="img/e2.png" id="im3"></a>
             <div class="wrapper">
             </div>
             <h1 align="center">Évènements à venir</h1>
@@ -43,23 +43,16 @@
                         <div id="article3">
                             <div id="article4">
                                 <div id="article5">
-                                <div class="sliderContainer">
+                                  <div class="sliderContainer">
                                     <div class="content">
-                                        <div class="item"><img src="lettre.png" id = "image1" alt="1"/>
-                                        </div>
-
-                                        <div class="item"><img src="lettre.png" id = "image1" alt="2"/>
-                                        </div>
-                                        <div class="item"><img src="lettre.png" id = "image1" alt="3"/>
-                                        </div>
-                                        <div class="item"><img src="lettre.png" id = "image1" alt="4"/>
-                                        </div>
-                                        <div class="item"><img src="lettre.png" id = "image1" alt="5"/>
-                                        </div>
+                                        <div class="item"><img src="lettre.png" id = "image1" alt="1"/></div>
+                                        <div class="item"><img src="lettre.png" id = "image1" alt="2"/></div>
+                                        <div class="item"><img src="lettre.png" id = "image1" alt="3"/></div>
+                                        <div class="item"><img src="lettre.png" id = "image1" alt="4"/></div>
+                                        <div class="item"><img src="lettre.png" id = "image1" alt="5"/></div>
                                     </div>
-                                </div>
-
-                                <a href="#artcile5" id ="a1">5</a>
+                                  </div>
+                                  <a href="#artcile5" id ="a1">5</a>
                                 </div>
                                 <a href="#article4" id="a1">4</a>
                             </div>
@@ -72,24 +65,6 @@
             </div>
 
         </body>
-    </html>
-		
-		
-<script type="text/javascript" src="js/logohover.js"></script>
-</body>
-<footer>
-    <nav id="menu_footer">
-      <div class="bloc_footer">
-        <ul>
-      <img id="flecheorange" class="img2" src="img/fc.svg" alt="flecheOrange"/>
-      <a href="https://fr-fr.facebook.com"><img id="facebook" class="img1" src="img/facebook.png" alt="facebook"/></a>
-      <a href="https://twitter.com/?lang=fr"><img id="twitter" class="img1" src="img/twitter.png" alt="twitter"/></a>
-      <a href="https://www.youtube.com/?hl=fr&gl=FR"><img id="youtube" class="img1" src="img/youtube.png" alt="youtube"/></a>
-          <img id="greatplace" class="img" src="img/Gp.png" alt="logoGreatPlace"/>
-        </ul>
-
-      </div>
-    </nav>
   <footer>
     <nav id="menu_footer">
       <div class="bloc_footer">

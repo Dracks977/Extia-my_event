@@ -1167,8 +1167,6 @@ border-color: #28282e;
   h1
   {
     color: #F26e27;
-    font-size: 300%;
-    margin-left: 5px;
   }
   
   i
@@ -1207,7 +1205,7 @@ border-color: #28282e;
       display: block;
       margin-left: 44%;
       margin-bottom: 10%;
-      width: 15%;
+      width: 8%;
      /* height: 10%; */
   }
 
