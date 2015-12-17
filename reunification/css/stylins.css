@@ -1085,6 +1085,14 @@ font-family: Gotham Rounded;
 overflow: hidden;
 }
 
+label
+{
+  margin:0;
+  display: block;
+  width: 90px;
+  float: left;
+}
+
 /*Menu*/
 header{
 background: #28282e;
@@ -1282,17 +1290,6 @@ margin-left: 5px;
     width: 50px;
   }
 
-#bouton11{
-background-color: #F26e27;
-border-color: #F26e27;
-border-width: 1px;
-border-radius: 10px;
-color:white;
-width: 70px;
-height: 20px;
-font-size: 7.5px;
-}
-
 .b {
 width: 80px;
 height: 10px;
@@ -1361,4 +1358,15 @@ a.info:hover span.mdr
    padding: 3px;
   }
 
-}谦⛈좌谦⛈좌谦⟈삈℡謜᷋쮋謝☥℡ᰡ蜧⚿욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦⛆욋謦
+#bouton11{
+background-color: #F26e27;
+border-color: #F26e27;
+border-width: 1px;
+border-radius: 10px;
+color:white;
+width: 70px;
+height: 20px;
+font-size: 7.5px;
+}
+
+}
