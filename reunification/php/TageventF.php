@@ -12,7 +12,7 @@ catch(PDOException $e)
     }
 
 $tag = $_POST['tag'];
-  $i = 0;
+  $i = "lol";
     $result = $conn->prepare("SELECT * FROM Event WHERE Darte >= NOW() AND Region = :tag AND PoF = 'Festif' ORDER BY Darte LIMIT 0,4 ");
     $result->bindParam('tag', $tag);
 		$result->execute();
@@ -24,7 +24,7 @@ $tag = $_POST['tag'];
       $h = date('H', $date);
       $i = date('i', $date);
 
-      if ($i == 0){
+      if ($i == "lol"){
       echo "
       <a style ='text-decoration : none;' href='article.php?id=" . $donnees['ID'] . "'><div class='case_pouet'>
           <div class='image2'>
@@ -53,9 +53,8 @@ $tag = $_POST['tag'];
       ";
       }
 
-      $i++;
+      $i = '549845464';
 
 }
-
 $result->closeCursor();
 ?>
