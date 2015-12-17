@@ -9,7 +9,7 @@ $(document).ready( function () {
                 if(msg == "42")    
                 {
                     $("span#erreur").html("Vous etes connecter.");
-                    alert("Vous etes connecter.");
+                    alert("Tu es connect&eacute;(e) !.");
                     
      
                 }

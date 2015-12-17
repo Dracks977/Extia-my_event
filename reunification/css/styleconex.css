@@ -392,6 +392,17 @@ width: 110px;
 height: 30px;
 font-size: 13px;
 }
+
+#mega{
+background-color: #F26e27;
+border-color: #F26e27;
+border-width: 1px;
+border-radius: 10px;
+color:white;
+width: 110px;
+height: 30px;
+font-size: 13px;
+}
    /*border-radius: 20px;*/
 #bouton3{
 background-color: #F26e27;
