@@ -15,6 +15,12 @@ catch(PDOException $e)
     	$result = $conn->prepare("SELECT * FROM Event WHERE Darte >= NOW() AND PoF = 'Festif' ORDER BY Darte LIMIT 0,4 ");
 		$result->execute();
 		while ($donnees = $result->fetch()){
+            $date = strtotime($donnees['Darte']);
+      $y = date('Y', $date);
+      $m = date('m', $date);
+      $d = date('d', $date);
+      $h = date('H', $date);
+      $i = date('i', $date);
 	
       if ($i == 0){
       echo "
@@ -24,7 +30,7 @@ catch(PDOException $e)
           </div>
           <div class='txt2'>
               <p id='title1'>" . $donnees['Libelle'] . "</p>
-              <i id='lieu_date1'>" . $donnees['Darte'] . "</i>
+              <i id='lieu_date1'>" . $y . '/' . $m . '/' . $d . ' ' . $h . ':' . $i . "</i>
               <p id='desc1'>" . $donnees['Description'] . "</p>
           </div>
         </div></a>
@@ -38,7 +44,7 @@ catch(PDOException $e)
           </div>
           <div class='txt2'>
               <p id='title1'>" . $donnees['Libelle'] . "</p>
-              <i id='lieu_date1'>" . $donnees['Darte'] . "</i>
+              <i id='lieu_date1'>" . $y . '/' . $m . '/' . $d . ' ' . $h . ':' . $i . "</i>
               <p id='desc1'>" . $donnees['Description'] . "</p>
           </div>
         </div></a>
