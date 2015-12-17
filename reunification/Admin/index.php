@@ -71,7 +71,7 @@ pastordu();
 
  <?php if(isset($_GET['id']) AND $_GET['id'] == 3): ?>
    <section id='moite' > 
- <center><h1>Ajout Villes</h1></center>
+ <center><h1>Ajout de villes</h1></center>
  <center><form action="ADD_Tag.php" method="POST">
 <p id="fuck">Libell&eacute; :</p>
  <input id="eventbox" name="ville" type="text" require><br>
@@ -84,7 +84,7 @@ pastordu();
 
 <?php if(isset($_GET['id']) AND $_GET['id'] == 2): ?>
  <section id='moite' > 
- <center><h1>Ajout Evenement</h1>
+ <center><h1>Ajout d'évènement</h1>
 <?php
 if(isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
   echo '<ul style="padding:0; color:red;">';
@@ -201,14 +201,14 @@ pastord();
 
  <?php if(isset($_GET['id']) AND $_GET['id'] == 3): ?>
    <section id='moite' > 
- <center><h1>Supression Villes</h1></center><br><br>
+ <center><h1>Supression de villes</h1></center><br><br>
  <center><form action="SUPP_Tag.php" method="POST">
  <select id="tagsel" name="Tag">
   <?php include("Tag_Lister.php"); ?>
  </select><br><br>
 <input id="Eb" type="submit" value="Supprimer" style="color:white">
  </form>
- <p style="padding:0; color:red;">Attention, Toutes suppresion est définitive.</p>
+ <p style="padding:0; color:red;">Attention, toute suppression est définitive.</p>
  </center>
 
  </section>
