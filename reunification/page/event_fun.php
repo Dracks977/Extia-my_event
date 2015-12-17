@@ -43,7 +43,7 @@ catch(PDOException $e)
 ?> 
   <div class="menu_gauche">
     <div class="image1">
-    <center>Calendrier</center>
+    <p id="cat1">Calendrier</p>
          <center><?php print $cal->showMonth(); ?></center>
     </div>
     <div class="txt1">
