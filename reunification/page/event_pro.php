@@ -4,6 +4,7 @@
   <title>Extia Events</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="../css/styleev.css">
+   <link rel="stylesheet" type="text/css" href="../activecalendar/data/css/plain.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <?php include("headerconnect.php"); ?>
 </header>
@@ -41,9 +42,9 @@ catch(PDOException $e)
 
 ?> 
   <div class="menu_gauche">
-    <div class="image1">
-    <center>Calendrier</center>
-    <center><?php print $cal->showMonth(); ?></center>
+     <div class="image1">
+    <p class="txt1">Calendrier</p>
+         <center><?php print $cal->showMonth(); ?></center>
     </div>
     <div class="txt1">
       <p id="cat1">Cat&eacutegories</p>
