@@ -37,7 +37,9 @@ echo "
     <!--L'URL se placera a la fin-->
     <p>Lien : " . $donnees['Url'] . "<p>
     <!--Ceci est le bouton pour s'inscrire-->
+    <form action='../php/Einsc.php?id=" . $id . "' method='POST'>
 	</br><input id='PopoPoue' type='submit' value=S'inscrire></br>
+    </form>
 		<br><a href='contact.php'><input id='Poueloupoueloup' type='button' value=J'ai&nbsp;une&nbsp;question&nbsp;!></input></a>
 	</div>
 	";

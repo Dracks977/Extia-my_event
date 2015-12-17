@@ -11,6 +11,16 @@
 </header>
 
 <body>
+<?php
+if(isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+  echo '<center><ul style="padding:0; color:red;"></center>';
+  foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+    echo '',$msg,'<br>'; 
+  }
+  echo '</ul>';
+  unset($_SESSION['ERRMSG_ARR']);
+}
+?> 
 <?php include("../php/Auto_event.php") ?>
 </body>
 <footer>

@@ -5,7 +5,8 @@ $(document).ready( function () {
            url: "php/Vlogin.php", 
            data: "tag="+$(this).val(), 
            success: function(msg){
-          $("#case_one").detach()
+          $("#case_one").detach();
+          $("#case_pouet").detach();
           msg.appendTo( "body" );
            }
         });

@@ -23,7 +23,7 @@ session_start(); if(isset($_SESSION['Admin']) AND $_SESSION['Admin'] == true):  
 <a href="index.php?id=1" class="info"><image class="l" id="logo" src="User.png"></image><span class="lol">Utilisateurs</span></a>
 <a href="index.php?id=2" class="info"><image class="l" id="logos" src="Event.png"></image><span class="sais">Évènements</span></a>
 <a href="index.php?id=3" class="info"><image class="l" id="logot" src="Categ.png"></image><span class="je">Catégories</span></a>
-<a href="index.php?id=4" class="info"><image class="l" id="logo2" src="Stats.png" style="margin-right: 0%;"></image><span class="drole">Statistiques</span></a>
+<a href="exel/stats.php" class="info"><image class="l" id="logo2" src="Stats.png" style="margin-right: 0%;"></image><span class="drole">Statistiques</span></a>
 <a href="other" class="info"><image class="l" id="logo1" src="Site.png" style="margin-right: 0;"></image><span class="les">Retour au site</span></a>
 <a href="dest.php" class="info"><image class="l" id="logo3" src="deco.png" style="margin-right: 0;"></image><span class="mdr">Deconnexion</span></a>
 </div>

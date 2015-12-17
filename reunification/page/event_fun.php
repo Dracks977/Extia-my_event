@@ -31,7 +31,9 @@ $(document).ready( function () {
            data: "tag="+i, 
            success: function(msg){
           var y = document.querySelectorAll('.case_one');
+          var x = document.querySelectorAll('.case_pouet');
           $(y).remove();
+          $(x).remove();
           $('body').append(msg);
            }
         });
