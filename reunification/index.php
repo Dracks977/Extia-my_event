@@ -45,11 +45,34 @@
                                 <div id="article5">
                                   <div class="sliderContainer">
                                     <div class="content">
-                                        <div class="item"><img src="lettre.png" id = "image1" alt="1"/></div>
-                                        <div class="item"><img src="lettre.png" id = "image1" alt="2"/></div>
-                                        <div class="item"><img src="lettre.png" id = "image1" alt="3"/></div>
-                                        <div class="item"><img src="lettre.png" id = "image1" alt="4"/></div>
-                                        <div class="item"><img src="lettre.png" id = "image1" alt="5"/></div>
+
+
+<?php
+
+include('php/config.php');
+
+try {
+    $conn = new PDO("mysql:host=$dbhost;dbname=$dbname;charset=utf8",$dbuser,$dbpass);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    }
+catch(PDOException $e)
+    {
+    echo "Connection failed (check config.php):   " . $e->getMessage();
+    }
+    $k = 1;
+    $result = $conn->prepare("SELECT * FROM Event LIMIT 0,5");
+    $result->execute();
+        while ($donnees = $result->fetch()){
+
+      echo '
+      <div class="item"><img src="upload/' . $donnees["image"] . '" id = "image1" alt="' . $k . '"/></div>
+      ';
+      $k++;
+}
+
+
+?>
                                     </div>
                                   </div>
                                   <a href="#artcile5" id ="a1">5</a>
