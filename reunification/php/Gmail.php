@@ -18,10 +18,26 @@ Repondre a :" . $_POST['mail'] . "<br><br><br><i>powered by dracks</i>
 ";
 if (mail($destinataire, $objet, $message, $headers)) // Envoi du message
 {
-    echo 'Votre message a bien été envoyé ';
+    echo "<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+
+    <link rel='stylesheet' type='text/css' href='../css/styleevenpro.css'>
+    <link rel='stylesheet' type='text/css' href='../css/styleconex.css'>
+
+<meta http-equiv='refresh' content='1;URL=../index.php'>
+<body>
+<p style = 'color: #F26e27; font-size : 20px; text-align : center; margin-top : 15%;'>Le message est envoyé !</p>
+</body>";
 }
 else // Non envoyé
 {
-    echo "Votre message n'a pas pu être envoyé";
+    echo "<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+
+    <link rel='stylesheet' type='text/css' href='../css/styleevenpro.css'>
+    <link rel='stylesheet' type='text/css' href='../css/styleconex.css'>
+
+<meta http-equiv='refresh' content='1;URL=../index.php'>
+<body>
+<p style = 'color: #F26e27; font-size : 20px; text-align : center; margin-top : 15%;'>Le message n'a pas pu être envoyé.</p>
+</body>";
 }
 ?>

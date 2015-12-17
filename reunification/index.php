@@ -14,10 +14,10 @@
         <body>
         <div class="slideshow">
         <ul>
-        <li><img src="" alt="" width="1300" height="600" /></li>
-        <li><img src="" alt="" width="1300" height="600" /></li>
-        <li><img src="" alt="" width="1300" height="600" /></li>
-        <li><img src="" alt="" width="1300" height="600" /></li>
+        <li><img  src="img/extia1.jpeg" alt="" width="1300" height="600" /></li>
+        <li><img src="img/extia8.jpeg" alt="" width="1300" height="600" /></li>
+        <li><img src="img/extia2.jpeg" alt="" width="1300" height="600" /></li>
+        <li><img src="img/extia9.jpeg" alt="" width="1300" height="600" /></li>
         </ul>
             <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
