@@ -25,7 +25,7 @@ session_start(); if(isset($_SESSION['Admin']) AND $_SESSION['Admin'] == true):  
 <a href="index.php?id=3" class="info"><image class="l" id="logot" src="Categ.png"></image><span class="je">Catégories</span></a>
 <a href="exel/stats.php" class="info"><image class="l" id="logo2" src="Stats.png" style="margin-right: 0%;"></image><span class="drole">Statistiques</span></a>
 <a href="../index.php" class="info"><image class="l" id="logo1" src="Site.png" style="margin-right: 0;"></image><span class="les">Retour au site</span></a>
-<a href="dest.php" class="info"><image class="l" id="logo3" src="deco.png" style="margin-right: 0;"></image><span class="mdr">Deconnexion</span></a>
+<a href="dest.php" class="info"><image class="l" id="logo3" src="deco.png" style="margin-right: 0;"></image><span class="mdr">Déconnexion</span></a>
 </div>
 
 <div id='wrap'>
@@ -36,7 +36,7 @@ session_start(); if(isset($_SESSION['Admin']) AND $_SESSION['Admin'] == true):  
 <?php if(!isset($_GET['id']) OR $_GET['id'] == 1): ?>
 
 <section id='moite' > 
- <center><h1>Info Utilisateur</h1>
+ <center><h1>Information utilisateurs</h1>
  <select id="N_User" name="N_User">
   <?php include("User_Lister.php"); ?>
  </select><br><br>
@@ -148,7 +148,7 @@ if(isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count(
  </select><br><br>
  <input id="Eb" type="submit" value="Supprimer" style="color:white">
  </form>
- <p style="padding:0; color:red;">Attention, Toutes suppresion est definitive.</p>
+ <p style="padding:0; color:red;">Attention, toute suppression est definitive.</p>
  </center>
 
  </section>
@@ -161,7 +161,7 @@ if(isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count(
 <?php if(isset($_GET['id']) AND $_GET['id'] == 2): ?>
 
  <section id='moite' > 
- <center><h1>Supression Evenement</h1></center><br><br>
+ <center><h1>Supression évènement</h1></center><br><br>
  <center><form action="SUPP_Event.php" method="POST">
  <select id="N_event" name="N_event">
   <?php include("Event_Lister.php"); ?>
@@ -169,7 +169,7 @@ if(isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count(
  <input id="Eb" type="submit" value="Supprimer" style="color:white"><br><br>
   <input id="Ibouton" type="submit" value="Informations" style="color:white"></center>
  </form> 
-  <center><p style="padding:0; color:red;">Attention, Toutes suppresion est definitive.</p></center>
+  <center><p style="padding:0; color:red;">Attention, toute suppression est définitive.</p></center>
 
 
   <br><center><div id="info"></div></center>
@@ -208,7 +208,7 @@ pastord();
  </select><br><br>
 <input id="Eb" type="submit" value="Supprimer" style="color:white">
  </form>
- <p style="padding:0; color:red;">Attention, Toutes suppresion est definitive.</p>
+ <p style="padding:0; color:red;">Attention, Toutes suppresion est définitive.</p>
  </center>
 
  </section>
