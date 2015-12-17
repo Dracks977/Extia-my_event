@@ -24,8 +24,7 @@ echo "
     <h1>" . $donnees['Libelle'] . "</h1>
     <!--Ceci est la photo-->
     <img id='imgeven' alt='example' src='../upload/" . $donnees['image'] . "'><br>
-
-		<input id='visio' type='button' value='Visio-Conference'></input>
+    <p>Visio : " . $donnees['Visio'] . "</br>
 		<!--Ceci est la date elle sera suivi d'un 'a' qui indiquera l'heure-->
     <p>Date : " . $donnees['Darte'] . "</br>
     <!--Ceci est le lieu, il y aura l'adresse suivi d'entre parenthese la région-->
@@ -51,7 +50,7 @@ echo "
         $donnees['Place'] = "Complet";
     }
             if ($donnees['Place'] == 9999){
-        $donnees['Place'] = "Illimiter";
+        $donnees['Place'] = "Illimité";
     }
 echo "
 <div id='even'>
@@ -59,8 +58,7 @@ echo "
     <h1>" . $donnees['Libelle'] . "</h1>
     <!--Ceci est la photo-->
     <img id='imgeven' alt='example' src='../upload/" . $donnees['image'] . "'><br>
-
-        <input id='visio' type='button' value='Visio-Conference'></input>
+    <p>Visio : " . $donnees['Visio'] . "</br>
         <!--Ceci est la date elle sera suivi d'un 'a' qui indiquera l'heure-->
     <p>Date : " . $donnees['Darte'] . "</br>
     <!--Ceci est le lieu, il y aura l'adresse suivi d'entre parenthese la région-->
