@@ -12,19 +12,46 @@ background-color: white;
 font-family: "gotham";
 }
 
+
+@media only screen and (max-device-width:1024px) {
+/*page event pro*/
+.menu_gauche {
+       /*padding: 2%;
+       padding-bottom: 41%;
+       background-color: white;
+       float: left;
+       border-style: solid;
+       border-width: 1px;
+       border-color: black;
+      padding-right: 2%;
+      padding-left: 1%;*/
+    background-color: white;
+    padding-bottom: 250%;
+    float:left;
+    padding-left: 1%;
+    border-style: solid;
+    border-color: #28282e;
+    border-width: 4px;
+    padding-right: 1%;
+    margin-top: 95px;
+    margin-left: 1%;
+    border-radius: 15px;
+}
+}
+
 /*Largeur de la fenetre*/
 @media only screen and (max-width:800px) {
  body {
- 	 font-size:90%;
+   font-size:90%;
  background-color:white;
  color:black;
  }
   label
 {
-	margin:0;
-	display: block;
-	width: 180px;
-	float: left;
+  margin:0;
+  display: block;
+  width: 180px;
+  float: left;
 }
 }
 
@@ -37,19 +64,19 @@ font-family: "gotham";
  }
   label
 {
-	margin:0;
-	display: block;
-	width: 180px;
-	float: left;
+  margin:0;
+  display: block;
+  width: 180px;
+  float: left;
 }
 }
 
 label
 {
-	margin:0;
-	display: block;
-	width: 180px;
-	float: left;
+  margin:0;
+  display: block;
+  width: 180px;
+  float: left;
 
 }
 
@@ -104,7 +131,7 @@ color:#394147;
 
 #hover
 {
-	/*margin-left: 50%;*/
+  /*margin-left: 50%;*/
     position: absolute;
     margin-left: 40%;
     width: 180px;
@@ -113,7 +140,7 @@ color:#394147;
 
 #co
 {
-	margin-left:93%;
+  margin-left:93%;
 }
 
 #inscc
@@ -185,7 +212,7 @@ color: #F26e27;
 
 
 .img1 {
-	  margin-left: 5%;
+    margin-left: 5%;
     width: 50px;
     height: 50px;
     margin-top: 1%;
@@ -224,10 +251,10 @@ margin-right:40px;
 
 /*page event pro*/
 .menu_gauche {
-	     /*padding: 2%;
-	     padding-bottom: 41%;
-	     background-color: white;
-	     float: left;
+       /*padding: 2%;
+       padding-bottom: 41%;
+       background-color: white;
+       float: left;
        border-style: solid;
        border-width: 1px;
        border-color: black;
@@ -298,7 +325,7 @@ padding-left: 50px;
     /*  margin-top: -55%;*/
 }
 /*
-.image3	{
+.image3 {
       display: inline;
 }
 
@@ -463,4 +490,4 @@ a.info:hover span.sais{
 
    color: white;
    padding: 3px;
- }s
+ }
