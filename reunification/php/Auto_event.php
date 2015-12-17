@@ -9,6 +9,12 @@ $reponse = $conn->query("SELECT * FROM Event WHERE ID={$id}");
 $donnees = $reponse->fetch();
 $reponse->closeCursor();
 if (isset($_SESSION['c'])){
+                $date = strtotime($donnees['Darte']);
+      $y = date('Y', $date);
+      $m = date('m', $date);
+      $d = date('d', $date);
+      $h = date('H', $date);
+      $i = date('i', $date);
 	if ($donnees['Prix'] == 0){
 		$donnees['Prix'] = "Gratuit";
 	}
@@ -26,7 +32,7 @@ echo "
     <img id='imgeven' alt='example' src='../upload/" . $donnees['image'] . "'><br>
     <p>Visio : " . $donnees['Visio'] . "</br>
 		<!--Ceci est la date elle sera suivi d'un 'a' qui indiquera l'heure-->
-    <p>Date : " . $donnees['Darte'] . "</br>
+    <p>Date : " . $y . '/' . $m . '/' . $d . ' ' . $h . ':' . $i . "</br>
     <!--Ceci est le lieu, il y aura l'adresse suivi d'entre parenthese la région-->
 	Lieu : " . $donnees['adr'] . "</p>
     <!--Ceci est la description de l'evenement-->
@@ -62,7 +68,7 @@ echo "
     <img id='imgeven' alt='example' src='../upload/" . $donnees['image'] . "'><br>
     <p>Visio : " . $donnees['Visio'] . "</br>
         <!--Ceci est la date elle sera suivi d'un 'a' qui indiquera l'heure-->
-    <p>Date : " . $donnees['Darte'] . "</br>
+    <p>Date : " . $y . '/' . $m . '/' . $d . ' ' . $h . ':' . $i . "</br>
     <!--Ceci est le lieu, il y aura l'adresse suivi d'entre parenthese la région-->
     Lieu : " . $donnees['adr'] . "</p>
     <!--Ceci est la description de l'evenement-->
