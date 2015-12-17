@@ -1,8 +1,14 @@
+@font-face {
+    font-family: "gotham";
+    src: url('../police/gotham.otf') format('truetype');
+}
+
 body {
     background-image: url("back5.png");
     background-repeat: repeat;
     background-size: 100%;
     margin: 0px auto;
+    font-family: "gotham";
 }
 
 select {

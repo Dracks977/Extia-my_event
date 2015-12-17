@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Ma Super Fonte";
-    src: url('MaSuperFonte-Regular.ttf');
+    font-family: "gotham";
+    src: url('../police/gotham.otf') format('truetype');
 }
 
 html, body {
@@ -9,7 +9,7 @@ padding:0;
 font-size:100%;
 color:black;
 background-color:white;
-font-family: Gotham Rounded;
+font-family: "gotham";
 }
 
 /*Largeur de la fenetre*/
