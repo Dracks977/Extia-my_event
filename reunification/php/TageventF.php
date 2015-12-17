@@ -12,7 +12,6 @@ catch(PDOException $e)
     }
 
 $tag = $_POST['tag'];
-  $i = "lol";
     $result = $conn->prepare("SELECT * FROM Event WHERE Darte >= NOW() AND Region = :tag AND PoF = 'Festif' ORDER BY Darte LIMIT 0,4 ");
     $result->bindParam('tag', $tag);
 		$result->execute();
@@ -24,21 +23,6 @@ $tag = $_POST['tag'];
       $h = date('H', $date);
       $i = date('i', $date);
 
-      if ($i == "lol"){
-      echo "
-      <a style ='text-decoration : none;' href='article.php?id=" . $donnees['ID'] . "'><div class='case_pouet'>
-          <div class='image2'>
-            <img class='i10' src='../upload/" . $donnees['image'] . "'>
-          </div>
-          <div class='txt2'>
-              <p id='title1'>" . $donnees['Libelle'] . "</p>
-              <i id='lieu_date1'>" . $y . '/' . $m . '/' . $d . ' ' . $h . ':' . $i . "</i>
-              <p id='desc1'>" . $donnees['Description'] . "</p>
-          </div>
-        </div></a>
-      ";
-      }
-      else{
       echo "
       <a style ='text-decoration : none;' href='article.php?id=" . $donnees['ID'] . "'><div class='case_one'>
           <div class='image2'>
@@ -51,9 +35,6 @@ $tag = $_POST['tag'];
           </div>
         </div></a>
       ";
-      }
-
-      $i = '549845464';
 
 }
 $result->closeCursor();
