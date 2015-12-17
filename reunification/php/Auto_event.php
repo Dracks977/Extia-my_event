@@ -7,14 +7,17 @@ include('config.php');
 $conn = new PDO("mysql:host=$dbhost;dbname=$dbname;charset=utf8",$dbuser,$dbpass);
 $reponse = $conn->query("SELECT * FROM Event WHERE ID={$id}");
 $donnees = $reponse->fetch();
-$reponse->closeCursor();
-if (isset($_SESSION['c'])){
-                $date = strtotime($donnees['Darte']);
+
+        $date = strtotime($donnees['Darte']);
       $y = date('Y', $date);
       $m = date('m', $date);
       $d = date('d', $date);
       $h = date('H', $date);
       $i = date('i', $date);
+      
+$reponse->closeCursor();
+if (isset($_SESSION['c'])){
+
 	if ($donnees['Prix'] == 0){
 		$donnees['Prix'] = "Gratuit";
 	}
