@@ -1,5 +1,5 @@
 <?php
-$destinataire = 'douako_j@etna-alternance.net';
+$destinataire = 'vitiel_s@etna-alternance.net';
 // Pour les champs $expediteur / $copie / $destinataire, séparer par une virgule s'il y a plusieurs adresses
 $expediteur = 'robin.lequerec@etna-learning.fr';
 $objet = "Prep'ETNA / Exclusion"; // Objet du message
@@ -10,14 +10,13 @@ $headers .= 'From: "robin.lequerec@etna-learning.fr"<'.$expediteur.'>'."\n"; // 
 $headers .= 'Delivered-to: '.$destinataire."\n"; // Destinataire     
 $message = "
 Bonjour, <br /><br />
-Nous avons remarqué avec l'équipe pédagogique et vos temps de logs que vous ne travaillez plus. <br />
-Nous avons envoyé de jawa chaque jour, et on a constaté que vous ne travaillez vraiment plus.<br />
-Ainsi,nous avons décidé de vous exclure temporairement de l'école pour une durée de 1mois.<br />
-Veuillez passer dans mon bureau à 11h30.<br />
+Nous avons remarqué avec l'équipe pédagogique et vos temps de logs que vous ne travaillez plus, et passez votre temps chez vous. <br />
+Ainsi, nous avons décidé de vous exclure temporairement de l'etablissement pour une durée de 2 semaines après les vacances.<br />
+Veuillez passer dans mon bureau à 18h45.<br />
 Cordialement,<br />  
 <br />
 <br />
-PS : Que la force soit avec vous. 
+Force et Honneur. 
 ";
 if (mail($destinataire, $objet, $message, $headers)) // Envoi du message
 {
