@@ -8,9 +8,11 @@ $(document).ready( function () {
            console.log(msg)
                 if(msg == "42")    
                 {
-                    $("span#erreur").html("Vous etes connecter.");
+                    $("span#erreur").html("Vous etes connect&eacute(e) !");
                     alert("Tu es connect&eacute;(e) !.");
-                    
+                    var obj =  document.location.href= "../index.php"; 
+                    setTimeout(obj,1000); 
+                                   
      
                 }
                 else if (msg == "24")  
@@ -20,14 +22,14 @@ $(document).ready( function () {
                 }
                 else if (msg == "200")  
                 {
-                    $("span#erreur").html("Veuillez entrer un Mail.");
+                    $("span#erreur").html("Veuillez entrer une adresse mail.");
                     
                 }
                 else if (msg =="201"){
                     $("span#erreur").html("Veuillez entrer un mot de passe.");
                 }
                  else if (msg =="202"){
-                    $("span#erreur").html("Mauvaise combinaison.");
+                    $("span#erreur").html("Veuillez saisir un mot de passe ou une adresse mail correcte.");
                 }
 
                             
